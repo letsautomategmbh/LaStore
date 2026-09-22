@@ -31,6 +31,20 @@ class PackageInstaller
     /** Grenze fuer den Download. Ein Modul, das groesser ist, ist ein Fehler. */
     const MAX_BYTES = 104857600; // 100 MiB
 
+    /**
+     * Wieviele beiseitegelegte Staende je Modul stehen bleiben.
+     *
+     * Fuenf, nicht einer: wer nach einem Update etwas vermisst, merkt es
+     * nicht immer am selben Tag, und der naechtliche Autopilot schiebt
+     * inzwischen weitere Fassungen nach. Fuenf reichen ueber ein Wochenende
+     * hinweg und kosten bei einem Modul von zwei Megabyte zehn.
+     *
+     * Aufgeraeumt wurde bisher gar nicht. Auf unserer eigenen Anlage lagen am
+     * 22.09.2026 siebenundvierzig Sicherungen aus sechs Wochen -- 66 MB, die
+     * niemand je wieder angesehen haette.
+     */
+    const SICHERUNGEN_BEHALTEN = 5;
+
     /** @var StoreClient */
     protected $client;
 
@@ -184,6 +198,8 @@ class PackageInstaller
                 );
             }
 
+            $this->raeumeAlteSicherungen($ziel);
+
             return array(
                 'name'    => $name,
                 'version' => isset($json['version']) ? $json['version'] : '',
@@ -306,6 +322,30 @@ class PackageInstaller
         }
 
         return $sicherung;
+    }
+
+    /**
+     * Alte beiseitegelegte Staende wegraeumen -- die juengsten behalten.
+     *
+     * Der Name traegt den Zeitstempel (.Modul.vorher-JJJJMMTT-HHMMSS), und
+     * der ist so gebaut, dass alphabetisch sortieren nach Alter sortiert.
+     * Deshalb genuegt sort(); ein filemtime je Verzeichnis waere langsamer
+     * und bei einem kopierten Stand sogar falsch.
+     *
+     * Schlaegt das Wegraeumen fehl, passiert nichts weiter: das Update ist an
+     * dieser Stelle schon durch, und eine liegengebliebene Sicherung ist
+     * kein Grund, es scheitern zu lassen.
+     */
+    protected function raeumeAlteSicherungen($ziel)
+    {
+        $staende = (array) @glob(dirname($ziel).'/.'.basename($ziel).'.vorher-*', GLOB_ONLYDIR);
+        sort($staende);
+
+        $zuviel = count($staende) - self::SICHERUNGEN_BEHALTEN;
+
+        for ($i = 0; $i < $zuviel; $i++) {
+            $this->loeschen($staende[$i]);
+        }
     }
 
     protected function zurueck($sicherung, $ziel)
