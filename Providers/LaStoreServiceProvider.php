@@ -9,6 +9,7 @@ use Modules\LaStore\Console\ResetInstallationCommand;
 use Modules\LaStore\Console\UpdateCommand;
 use Modules\LaStore\Console\SelfUpdateCommand;
 use Modules\LaStore\Console\SyncCommand;
+use Modules\LaStore\Entities\CatalogEntry;
 
 class LaStoreServiceProvider extends ServiceProvider
 {
@@ -211,5 +212,80 @@ class LaStoreServiceProvider extends ServiceProvider
                 .'<i class="glyphicon glyphicon-download-alt"></i> '
                 .__('LaStore').'</a></li>';
         }, 24);
+
+        /*
+         * "Details ansehen" auf FreeScouts EIGENER Modulseite - nicht nur auf
+         * unserer.
+         *
+         * Der Kern zeigt den Verweis genau dann, wenn die Moduldaten ein
+         * `detailsUrl` tragen (resources/views/modules/partials/module_card).
+         * Er liest es aus der module.json: eine Angabe je Modul, die bei jeder
+         * neuen Fassung mitgepflegt sein will und bei neunzehn Modulen
+         * neunzehn Veroeffentlichungen kostet.
+         *
+         * Hier steht sie an EINER Stelle, und zwar nicht einmal bei uns: der
+         * Katalog bringt zu jedem Produkt ein `details_url` mit, das der
+         * LADEN setzt. Ein neues Modul bekommt den Verweis damit, ohne dass
+         * im Modul irgendwo etwas nachgetragen wird.
+         *
+         * Die Adresse hier selbst zusammenzusetzen waere die naheliegende,
+         * aber falsche Abkuerzung: nicht jedes Produkt im Katalog hat auch
+         * eine oeffentliche Seite. `feed` steht im Katalog und hat keine -
+         * ein selbstgebautes /produkt/feed fuehrte auf 404. Der Laden weiss
+         * das und laesst das Feld dann leer; wir nehmen einfach, was er sagt.
+         *
+         * Ein View-Composer und KEINE ueberschriebene Ansicht: gefuellt wird
+         * nur ein Feld, das die Kern-Karte schon liest. Eine eigene Kopie von
+         * module_card.blade.php fror FreeScouts Fassung ein, und eine
+         * Aenderung dort waere still ueberstimmt - derselbe Grund, aus dem
+         * die Seitenleiste oben per Skript ergaenzt wird statt per Kopie.
+         *
+         * Eine Angabe aus der module.json gewinnt: traegt ein Modul dort
+         * bewusst eine eigene Adresse - LaStore selbst zeigt auf seine
+         * Anleitung, weil es im Laden keine Produktseite hat -, bleibt sie
+         * stehen.
+         */
+        \View::composer('modules.modules', function ($view) {
+            $daten = $view->getData();
+
+            if (empty($daten['installed_modules']) || ! is_array($daten['installed_modules'])) {
+                return;
+            }
+
+            try {
+                $katalog = CatalogEntry::all()->keyBy('alias');
+            } catch (\Throwable $e) {
+                /*
+                 * Vor der ersten Wanderung gibt es die Tabelle noch nicht,
+                 * und ein Katalogabgleich kann ausstehen. Die ganze
+                 * Modulseite dafuer scheitern zu lassen, waere der deutlich
+                 * schlechtere Tausch: ohne sie laesst sich kein Modul mehr
+                 * ein- oder ausschalten.
+                 */
+                return;
+            }
+
+            $module = $daten['installed_modules'];
+
+            foreach ($module as $i => $m) {
+                if (! empty($m['detailsUrl'])) {
+                    continue;
+                }
+
+                if (empty($m['alias']) || ! $katalog->has($m['alias'])) {
+                    continue;
+                }
+
+                $adresse = $katalog->get($m['alias'])->value('details_url');
+
+                if (! $adresse) {
+                    continue;
+                }
+
+                $module[$i]['detailsUrl'] = $adresse;
+            }
+
+            $view->with('installed_modules', $module);
+        });
     }
 }
