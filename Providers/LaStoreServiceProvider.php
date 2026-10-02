@@ -224,15 +224,28 @@ class LaStoreServiceProvider extends ServiceProvider
          * neunzehn Veroeffentlichungen kostet.
          *
          * Hier steht sie an EINER Stelle, und zwar nicht einmal bei uns: der
-         * Katalog bringt zu jedem Produkt ein `details_url` mit, das der
-         * LADEN setzt. Ein neues Modul bekommt den Verweis damit, ohne dass
-         * im Modul irgendwo etwas nachgetragen wird.
+         * Katalog bringt die Adresse zu jedem Produkt mit, der LADEN setzt
+         * sie. Ein neues Modul bekommt den Verweis damit, ohne dass im Modul
+         * irgendwo etwas nachgetragen wird.
+         *
+         * Zwei Felder, in dieser Reihenfolge:
+         *
+         *   shop_url     die Seite im Laden - Beschreibung, Bilder, Preis.
+         *                Das ist dasselbe Ziel wie auf unserer eigenen
+         *                Seite, und "Details ansehen" soll ueberall dorthin
+         *                fuehren, wo entschieden wird.
+         *   details_url  die Anleitung. Rueckfall fuer ein Produkt ohne
+         *                oeffentliche Seite: `hr` ist so eins - im Katalog,
+         *                aber nicht gelistet. Besser die Dokumentation als
+         *                gar nichts.
+         *
+         * Steht keines von beiden, bleibt die Karte ohne Verweis. `feed` ist
+         * so ein Fall, und das ist richtig: es gibt dort nichts zu sehen.
          *
          * Die Adresse hier selbst zusammenzusetzen waere die naheliegende,
-         * aber falsche Abkuerzung: nicht jedes Produkt im Katalog hat auch
-         * eine oeffentliche Seite. `feed` steht im Katalog und hat keine -
-         * ein selbstgebautes /produkt/feed fuehrte auf 404. Der Laden weiss
-         * das und laesst das Feld dann leer; wir nehmen einfach, was er sagt.
+         * aber falsche Abkuerzung und war der erste Versuch: ein gebautes
+         * /produkt/feed und /produkt/hr fuehrten auf 404. Ob es eine Seite
+         * gibt, weiss nur der Laden.
          *
          * Ein View-Composer und KEINE ueberschriebene Ansicht: gefuellt wird
          * nur ein Feld, das die Kern-Karte schon liest. Eine eigene Kopie von
@@ -276,7 +289,8 @@ class LaStoreServiceProvider extends ServiceProvider
                     continue;
                 }
 
-                $adresse = $katalog->get($m['alias'])->value('details_url');
+                $eintrag = $katalog->get($m['alias']);
+                $adresse = $eintrag->value('shop_url') ?: $eintrag->value('details_url');
 
                 if (! $adresse) {
                     continue;
