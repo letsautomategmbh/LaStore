@@ -102,7 +102,7 @@
                  Stelle zu viel: der Kunde fragt sich, ob es einen Unterschied
                  gibt. Getragen wird es jetzt von der Spalte "Aktion". --}}
             <div class="alert alert-info margin-bottom">
-                <strong>{{ trans_choice('{1}Ein Modul läuft schon, noch ohne Lizenz aus dem Store.|[2,*]:count Module laufen schon, noch ohne Lizenz aus dem Store.', count($adoptable), ['count' => count($adoptable)]) }}</strong>
+                <strong>{{-- Kein trans_choice(): unter Laravel 5.5 liest es die JSON-Sprachdateien nicht, der Satz bliebe in jeder Sprache deutsch. --}}{{ count($adoptable) === 1 ? __('Ein Modul läuft schon, noch ohne Lizenz aus dem Store.') : __(':count Module laufen schon, noch ohne Lizenz aus dem Store.', ['count' => count($adoptable)]) }}</strong>
                 <br>{{ __('Sie laufen unverändert weiter. Mit dem Schlüssel ändert sich nur, woher sie ihre Updates beziehen — unten in der Liste unter „Lizenz übernehmen".') }}
             </div>
         @endif
