@@ -2,10 +2,25 @@
 
 use Illuminate\Support\Facades\Route;
 
+/* ZU JEDEM PRAEFIX GEHOERT \Helper::getSubdirectory().
+ *
+ * Steht FreeScout nicht in der Wurzel, sondern unter
+ * https://kunde.ch/helpdesk, dann liefert der Aufruf "helpdesk" und jede
+ * Route dieser Datei bekommt es vorangestellt. Ohne das meldet das Modul
+ * seine Wege unter /<praefix>/... an, waehrend der Browser sie unter
+ * /helpdesk/<praefix>/... sucht -- jede Seite des Moduls ist dann eine 404,
+ * und zwar NUR bei Kunden mit Unterverzeichnis. In der Wurzel ist der
+ * Rueckgabewert leer und es aendert sich nichts; deshalb faellt das Fehlen
+ * bei uns selbst nie auf.
+ *
+ * Der Leitfaden nennt es als Pflicht, und der Modulgenerator setzt es von
+ * selbst -- hier war es verlorengegangen. Verschachtelte Gruppen bekommen es
+ * NICHT: die erben das Praefix ihrer Elterngruppe. */
+
 Route::group([
     'namespace'  => 'Modules\LaStore\Http\Controllers',
     'middleware' => ['web', 'auth'],
-    'prefix'     => 'store',
+    'prefix' => \Helper::getSubdirectory().'/store',
     'as'         => 'lastore.',
 ], function () {
     Route::get('/', 'StoreController@index')->name('index');

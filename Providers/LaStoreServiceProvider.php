@@ -11,10 +11,23 @@ use Modules\LaStore\Console\SelfUpdateCommand;
 use Modules\LaStore\Console\SyncCommand;
 use Modules\LaStore\Entities\CatalogEntry;
 
+/* Schritt 3 des Modulleitfadens: eine Konstante mit dem Kuerzel, die auf
+   _MODULE endet. Sie gilt fuer die ganze Anwendung, nicht nur fuer diese
+   Klasse -- gedacht ist sie fuer Aufrufe wie
+   \Module::getPublicPath(LASTORE_MODULE) in Ansichten und in anderen Modulen, wo
+   self::MODULE_ALIAS nicht zu haben ist.
+
+   Die Abfrage davor ist kein Zierrat: der Dienstleister wird in Proben
+   mehrfach hochgefahren, und ein zweites define() derselben Konstante ist in
+   PHP eine Warnung. */
+if (!defined('LASTORE_MODULE')) {
+    define('LASTORE_MODULE', 'lastore');
+}
+
 class LaStoreServiceProvider extends ServiceProvider
 {
     const MODULE_NAME = 'LaStore';
-    const MODULE_ALIAS = 'lastore';
+    const MODULE_ALIAS = LASTORE_MODULE;
 
     public function boot()
     {
