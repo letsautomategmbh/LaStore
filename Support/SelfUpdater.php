@@ -274,7 +274,7 @@ class SelfUpdater
         $ziel = tempnam(sys_get_temp_dir(), 'lashop-');
 
         try {
-            $http = new \GuzzleHttp\Client();
+            $http = new \GuzzleHttp\Client(\Helper::setGuzzleDefaultOptions());
             $antwort = $http->request('GET', $url, \Helper::setGuzzleDefaultOptions([
                 'connect_timeout' => 15,
                 'timeout'         => 300,

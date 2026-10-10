@@ -9,7 +9,7 @@
         "module",
         "letsautomate"
     ],
-    "version": "1.5.0",
+    "version": "1.5.1",
     "requiredAppVersion": "1.8.233",
     "detailsUrl": "https://shop.letsautomate.ch/shop/anleitung/lastore",
     "img": "/modules/lastore/img/icon.png",

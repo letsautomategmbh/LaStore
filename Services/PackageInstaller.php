@@ -90,7 +90,7 @@ class PackageInstaller
         $ziel = $this->tempFile('lastore-paket-', '.zip');
 
         try {
-            $client = new \GuzzleHttp\Client();
+            $client = new \GuzzleHttp\Client(\Helper::setGuzzleDefaultOptions());
             $antwort = $client->request('GET', $meldung['download'], \Helper::setGuzzleDefaultOptions(array(
                 'connect_timeout' => 15,
                 // Ein Paket darf laenger brauchen als eine Abfrage.

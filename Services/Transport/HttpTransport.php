@@ -126,7 +126,7 @@ class HttpTransport implements Transport
         }
 
         try {
-            $client = new \GuzzleHttp\Client();
+            $client = new \GuzzleHttp\Client(\Helper::setGuzzleDefaultOptions());
             $response = $client->request($method, $url, \Helper::setGuzzleDefaultOptions($options));
         } catch (\Exception $e) {
             // Nur ausweichen, wenn es wirklich eine Adresse gibt, und nur
