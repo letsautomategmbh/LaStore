@@ -10,6 +10,7 @@ use Modules\LaStore\Console\UpdateCommand;
 use Modules\LaStore\Console\SelfUpdateCommand;
 use Modules\LaStore\Console\SyncCommand;
 use Modules\LaStore\Entities\CatalogEntry;
+use Modules\LaStore\Support\Modulzahlen;
 
 /* Schritt 3 des Modulleitfadens: eine Konstante mit dem Kuerzel, die auf
    _MODULE endet. Sie gilt fuer die ganze Anwendung, nicht nur fuer diese
@@ -168,6 +169,20 @@ class LaStoreServiceProvider extends ServiceProvider
          * Nur auf dieser einen Seite, nicht global: der Haken 'javascript'
          * feuert auf jeder Seite.
          */
+        /*
+         * Dem Kern beim Rendern seiner eigenen Seitenleiste über die Schulter
+         * schauen und die drei Zahlen mitnehmen -- siehe `Modulzahlen`, dort
+         * steht, warum wir sie nicht selbst ausrechnen.
+         *
+         * Ein Komponist und keine überschriebene Ansicht: er liest nur mit
+         * und gibt nichts aus. Benennt FreeScout die Ansicht eines Tages um,
+         * läuft er nicht mehr -- dann fehlen auf unserer Seite drei Zahlen,
+         * und sonst nichts.
+         */
+        \View::composer('modules.sidebar_menu', function ($view) {
+            Modulzahlen::merken($view->getData());
+        });
+
         \Eventy::addAction('javascript', function () {
             if (\Route::currentRouteName() !== 'modules') {
                 return;
