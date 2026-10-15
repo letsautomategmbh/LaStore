@@ -59,6 +59,13 @@ class Marke
      * `1em` statt fester Pixel, damit es der Schriftgrösse der jeweiligen
      * Regel folgt (in der Seitenleiste 16 px).
      *
+     * `vertical-align` greift nur dort, wo die Marke wirklich im Textfluss
+     * steht -- in der Überschrift der Seite. Ein 1 em hohes Kästchen sitzt
+     * mit seiner Unterkante auf der Grundlinie und überragt damit die
+     * Versalhöhe um rund 0,3 em; die Marke stand sichtbar zu hoch. Wo die
+     * Regeln des Kerns sie absolut setzen (Seitenleiste, Verwaltungsmenü),
+     * bleibt der Wert wirkungslos.
+     *
      * `aria-hidden`, weil der Text daneben dasselbe sagt -- ein Vorleser
      * spräche sonst zweimal von demselben Eintrag.
      */
@@ -66,7 +73,7 @@ class Marke
     {
         return '<svg class="'.e($klasse).'" viewBox="'.self::AUSSCHNITT.'" '
             .'xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" '
-            .'style="width:1em;height:1em">'
+            .'style="width:1em;height:1em;vertical-align:-.15em">'
             .'<path fill="currentColor" d="'.self::PFAD.'"/></svg>';
     }
 }

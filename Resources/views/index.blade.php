@@ -1,6 +1,8 @@
 @extends('layouts.app')
 
-@section('title', __('Store'))
+{{-- Im Reiter des Browsers nur der Name: ein Sinnbild kann er nicht, und
+     eine Zahl im Reiter liest niemand. --}}
+@section('title', __('LaStore'))
 
 @php
     /* Einmal filtern, zweimal benutzen: die Kacheln unten und die Zahl in der
@@ -83,8 +85,17 @@
         </div>
     @endforeach
 
+    {{-- Dieselbe Marke, derselbe Name, dieselbe Klammer wie im Menü daneben.
+         Vorher stand hier «Store» -- ein zweiter Name für dasselbe, und der
+         Leser musste sich zusammenreimen, dass der Eintrag «LaStore» und die
+         Überschrift «Store» dieselbe Seite meinen.
+
+         Die Marke trägt hier KEIN `glyphicon`: dort draussen setzt die Regel
+         der Seitenleiste sie absolut, hier soll sie im Textfluss mitlaufen
+         und mit der Überschrift wachsen (`1em`). --}}
     <div class="section-heading">
-        {{ __('Store') }}
+        {!! \Modules\LaStore\Support\Marke::svg('lastore-marke') !!}
+        {{ __('LaStore') }}@if (count($sichtbar)) <small>({{ count($sichtbar) }})</small>@endif
     </div>
 
     @include('partials/flash_messages')
