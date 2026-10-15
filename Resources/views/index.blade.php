@@ -152,7 +152,24 @@
             #lastore-module-liste .module-card img { object-fit: cover; }
         </style>
 
-        <div class="row" id="lastore-module-liste">
+        {{-- `clearfix` und NICHT `row`.
+
+             Bootstraps `.row` trägt `margin-left: -15px` -- gedacht für eine
+             Reihe INNERHALB einer Spalte, deren Polsterung sie damit
+             zurücknimmt. Hier stand sie direkt im `row-container`, und dessen
+             15 px Polsterung hob sie damit auf: die Kacheln klebten am linken
+             Rand und waren 15 px zu breit. Gemessen am 15.10.2026 bei 1280 px
+             Fensterbreite:
+
+                 mit `row`        Kachel bei x=261, 679 breit
+                 mit `clearfix`   Kachel bei x=276, 659 breit
+                 FreeScouts eigene Modulseite        x=276, 659 breit
+
+             Dort stehen die Kacheln ohne Zwischenstück direkt im
+             `row-container`. `clearfix` statt gar nichts, weil die Kacheln
+             `col-*` sind und also schweben -- ohne das reicht der Behälter
+             nicht um sie herum. --}}
+        <div class="clearfix" id="lastore-module-liste">
             @foreach ($sichtbar as $row)
                 @include('lastore::partials.module_card', ['row' => $row])
             @endforeach
