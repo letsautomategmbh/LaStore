@@ -2,12 +2,19 @@
 
 @section('title', __('Store'))
 
+@php
+    /* Einmal filtern, zweimal benutzen: die Kacheln unten und die Zahl in der
+       Seitenleiste. Stünde die Bedingung an beiden Stellen, verspräche die
+       Klammer eines Tages eine Kachel, die es nicht gibt. */
+    $sichtbar = \Modules\LaStore\Support\InstalledModules::sichtbar($inventory);
+@endphp
+
 {{-- Die Seitenleiste der Modulverwaltung, damit der Sprung von dort hierher
      den Zusammenhang behält: wer aus "Modules" kommt, findet den Weg zurück
      an derselben Stelle. --}}
 @section('sidebar')
     @include('partials/sidebar_menu_toggle')
-    @include('lastore::partials.sidebar_menu')
+    @include('lastore::partials.sidebar_menu', ['eigeneAnzahl' => count($sichtbar)])
 @endsection
 
 @section('content')
@@ -135,10 +142,7 @@
         </style>
 
         <div class="row" id="lastore-module-liste">
-            @foreach ($inventory as $row)
-                @if ($row['state'] === \Modules\LaStore\Support\InstalledModules::STATE_FOREIGN)
-                    @continue
-                @endif
+            @foreach ($sichtbar as $row)
                 @include('lastore::partials.module_card', ['row' => $row])
             @endforeach
         </div>

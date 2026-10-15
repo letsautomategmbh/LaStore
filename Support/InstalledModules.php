@@ -125,6 +125,35 @@ class InstalledModules
     }
 
     /**
+     * Die Zeilen, die unsere Seite wirklich zeigt.
+     *
+     * `inventory()` liefert auch Module, die hier zwar liegen, aber nichts
+     * mit dem Laden zu tun haben (`STATE_FOREIGN`). Die Kachelliste
+     * überspringt sie -- und die Zahl in der Seitenleiste muss durch
+     * **denselben** Filter, sonst verspricht sie eine Kachel mehr, als es
+     * gibt. Darum steht die Bedingung hier und nicht zweimal in den
+     * Ansichten.
+     */
+    public static function sichtbar(array $inventory)
+    {
+        return array_values(array_filter($inventory, function ($zeile) {
+            return $zeile['state'] !== self::STATE_FOREIGN;
+        }));
+    }
+
+    /**
+     * Wie viele Kacheln die Seite zeigt -- für die Klammer im Menü.
+     *
+     * Rechnet das ganze Inventar durch, obwohl nur eine Zahl herauskommt.
+     * Das ist Absicht: eine zweite, billigere Zählung wäre eine zweite
+     * Wahrheit, und die beiden liefen beim nächsten Umbau auseinander.
+     */
+    public static function sichtbareAnzahl()
+    {
+        return count(self::sichtbar(self::inventory()));
+    }
+
+    /**
      * Nur die, die uebernommen werden koennen: installiert, im Katalog, ohne
      * Lizenz.
      *

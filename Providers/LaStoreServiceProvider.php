@@ -10,6 +10,8 @@ use Modules\LaStore\Console\UpdateCommand;
 use Modules\LaStore\Console\SelfUpdateCommand;
 use Modules\LaStore\Console\SyncCommand;
 use Modules\LaStore\Entities\CatalogEntry;
+use Modules\LaStore\Support\InstalledModules;
+use Modules\LaStore\Support\Marke;
 use Modules\LaStore\Support\Modulzahlen;
 
 /* Schritt 3 des Modulleitfadens: eine Konstante mit dem Kuerzel, die auf
@@ -190,6 +192,12 @@ class LaStoreServiceProvider extends ServiceProvider
 
             $url = route('lastore.index');
             $text = __('LaStore');
+            $anzahl = InstalledModules::sichtbareAnzahl();
+
+            /* Dasselbe Sinnbild und dieselbe Klammer wie in unserer eigenen
+               Seitenleiste -- die beiden Leisten stehen nebeneinander, sobald
+               jemand hin und her springt, und sollen dann gleich aussehen. */
+            $marke = Marke::svg();
 
             /*
              * BLANKER Code, KEIN <script>-Tag.
@@ -207,8 +215,9 @@ class LaStoreServiceProvider extends ServiceProvider
                 .'var li=document.createElement("li");'
                 .'var a=document.createElement("a");'
                 .'a.href='.json_encode($url).';'
-                .'a.innerHTML=\'<i class="glyphicon glyphicon-shopping-cart"></i> \';'
+                .'a.innerHTML='.json_encode($marke.' ').';'
                 .'a.appendChild(document.createTextNode('.json_encode($text).'));'
+                .($anzahl ? 'a.insertAdjacentHTML("beforeend", '.json_encode(' <small>('.$anzahl.')</small>').');' : '')
                 .'li.appendChild(a);ul.appendChild(li);'
                 .'})();';
         });
@@ -236,8 +245,12 @@ class LaStoreServiceProvider extends ServiceProvider
              * Browser oben. Wer nur das DOM misst, sucht den Fehler im
              * falschen Stueck.
              */
+            /* Auch hier die Marke: sonst trüge derselbe Eintrag an zwei
+               Stellen zwei verschiedene Sinnbilder. Eine Klammer steht hier
+               NICHT -- im Verwaltungsmenü trägt kein Eintrag eine, und eine
+               einzelne wäre dort ein Fremdkörper. */
             echo '<li class="'.$active.'"><a href="'.route('lastore.index').'">'
-                .'<i class="glyphicon glyphicon-download-alt"></i> '
+                .Marke::svg().' '
                 .__('LaStore').'</a></li>';
         }, 24);
 

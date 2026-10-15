@@ -11,11 +11,25 @@
      mit. Dafür bricht auch nichts - es sind drei Verweise auf eine Seite,
      die es gibt.
 
-     Die Zahlen in Klammern kommen aus `Modulzahlen` -- abgelesen beim Kern,
-     nicht selbst gerechnet. Fehlen sie, bleibt der Eintrag ohne Klammer;
-     dort steht, warum das in Ordnung ist. Der eigene Eintrag trägt keine,
-     genau wie auf der Modulseite des Kerns. --}}
-@php $zahlen = \Modules\LaStore\Support\Modulzahlen::holen(); @endphp
+     Die Zahlen in Klammern der ersten drei Einträge kommen aus
+     `Modulzahlen` -- abgelesen beim Kern, nicht selbst gerechnet. Fehlen
+     sie, bleibt der Eintrag ohne Klammer; dort steht, warum das in Ordnung
+     ist.
+
+     Die eigene Zahl kommt von der Seite selbst (`$eigeneAnzahl`) und zählt
+     genau die Kacheln, die darunter stehen -- siehe `InstalledModules::sichtbar()`.
+     Fehlt sie, weil die Leiste einmal von woanders eingebunden wird, zählt
+     sie derselbe Filter nach.
+
+     Das Sinnbild ist unsere eigene Marke und kein Glyphicon: der Marktplatz
+     trug denselben Einkaufswagen, und zwei gleiche Symbole untereinander
+     sind keine Unterscheidung. Siehe `Support/Marke.php`. --}}
+@php
+    $zahlen = \Modules\LaStore\Support\Modulzahlen::holen();
+    $eigeneAnzahl = isset($eigeneAnzahl)
+        ? $eigeneAnzahl
+        : \Modules\LaStore\Support\InstalledModules::sichtbareAnzahl();
+@endphp
 
 <div class="sidebar-title">
     {{ __('Modules') }}
@@ -38,7 +52,7 @@
     </li>
     <li class="active">
         <a href="{{ route('lastore.index') }}">
-            <i class="glyphicon glyphicon-shopping-cart"></i> {{ __('LaStore') }}
+            {!! \Modules\LaStore\Support\Marke::svg() !!} {{ __('LaStore') }}@if ($eigeneAnzahl) <small>({{ $eigeneAnzahl }})</small>@endif
         </a>
     </li>
 </ul>
