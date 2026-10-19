@@ -16,6 +16,7 @@ use Modules\LaStore\Support\InstalledModules;
 use Modules\LaStore\Support\ModulAnmeldung;
 use Modules\LaStore\Support\SelfUpdater;
 use Modules\LaStore\Support\Sicherungen;
+use Modules\LaStore\Support\Umzug;
 
 class StoreController extends Controller
 {
@@ -97,7 +98,50 @@ class StoreController extends Controller
             'selbstNeu'    => SelfUpdater::hinterlegt(),
             'selbstNotiz'  => SelfUpdater::hinterlegteNotiz(),
             'sicherungen'  => $this->sicherungenMitGroesse(),
+            'umzug'        => Umzug::anstehend(),
         ]);
+    }
+
+    /**
+     * Umbenannte Module umziehen, alle zusammen. Siehe Support\Umzug.
+     */
+    public function umzug(Request $request)
+    {
+        $this->authorizeAdmin();
+
+        $ergebnis = Umzug::ausfuehren();
+
+        switch ($ergebnis['status']) {
+            case Umzug::KEINER:
+                \Session::flash('flash_success_floating', __('Kein Umzug steht an.'));
+                break;
+
+            case Umzug::WARTEN:
+                \Session::flash('flash_warning_floating', $ergebnis['fehler']);
+                break;
+
+            case Umzug::FEHLER:
+                \Session::flash('flash_error_floating', __('Nicht umgezogen, der bisherige Stand ist unverändert: :fehler', ['fehler' => $ergebnis['fehler']]));
+                break;
+
+            default:
+                if ($ergebnis['offen']) {
+                    $befehle = array();
+
+                    foreach (array_keys($ergebnis['offen']) as $alias) {
+                        $befehle[] = '<code>'.e(ModulAnmeldung::befehl($alias)).'</code>';
+                    }
+
+                    \Session::flash('flash_error_unescaped', __(
+                        'Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle',
+                        ['befehle' => implode(' ', $befehle)]
+                    ));
+                } else {
+                    \Session::flash('flash_success_floating', __(':n Module sind umgezogen.', ['n' => count($ergebnis['module'])]));
+                }
+        }
+
+        return redirect()->route('lastore.index');
     }
 
     /**
@@ -303,6 +347,20 @@ class StoreController extends Controller
             \Session::flash('flash_error_floating', __('Es fehlt der Modul-Alias.'));
 
             return redirect()->back();
+        }
+
+        /*
+         * Liegt das Modul noch unter seinem alten Kürzel hier, ist das ein
+         * Umzug und keine Installation. Sonst entstünde `LaBexio` NEBEN
+         * `Bexio`, und FreeScout lüde beide -- doppelte Strecken auf
+         * denselben Tabellen.
+         */
+        foreach (Umzug::ersetzungen() as $alt => $neu) {
+            if ($neu === $alias && \Module::findByAlias($alt)) {
+                \Session::flash('flash_error_floating', __('Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.'));
+
+                return redirect()->back();
+            }
         }
 
         $service = new LicenseService();

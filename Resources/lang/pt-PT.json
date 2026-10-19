@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": "Não foi possível eliminar :n de :m cópias. Faltam permissões ao servidor web?",
     "Alle Sicherungen sind gelöscht.": "Todas as cópias foram eliminadas.",
     "Die Sicherung ist gelöscht.": "A cópia foi eliminada.",
-    "Diese Sicherung liess sich nicht löschen.": "Não foi possível eliminar esta cópia."
+    "Diese Sicherung liess sich nicht löschen.": "Não foi possível eliminar esta cópia.",
+    "Neue interne Namen für :n Module": "Novos nomes internos para :n módulos",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Mudar agora os :n módulos para os novos nomes internos?",
+    "Jetzt umziehen": "Mudar agora",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Os nossos módulos têm agora internamente o prefixo «La», para nunca colidirem com módulos de outros fornecedores. O que vê não muda: nomes, menus, endereços e dados. Os módulos mudam em conjunto e a versão anterior fica uma semana como cópia de segurança.",
+    "Kein Umzug steht an.": "Não há nenhuma mudança pendente.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Não mudado, o estado anterior mantém-se: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "Os módulos mudaram, mas nem todos estão registados. Execute no servidor: :befehle",
+    ":n Module sind umgezogen.": ":n módulos mudaram.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Este módulo já está instalado aqui com o nome anterior. Escolha «Mudar agora» no topo.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Nova versão :v com um novo nome interno. Vem com a mudança no topo desta página.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Ainda há tarefas de :module na fila. A mudança será feita na próxima execução.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "A loja não oferece nenhum pacote :neu para :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "O módulo anterior não está no diretório de módulos.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Já existe um módulo com o nome :name. A mudança não é feita."
 }

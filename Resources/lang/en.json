@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n of :m backups could not be deleted. Does the web server lack permission?",
     "Alle Sicherungen sind gelöscht.": "All backups have been deleted.",
     "Die Sicherung ist gelöscht.": "The backup has been deleted.",
-    "Diese Sicherung liess sich nicht löschen.": "This backup could not be deleted."
+    "Diese Sicherung liess sich nicht löschen.": "This backup could not be deleted.",
+    "Neue interne Namen für :n Module": "New internal names for :n modules",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Move all :n modules to their new internal names now?",
+    "Jetzt umziehen": "Move now",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Our modules now carry the prefix \"La\" internally, so they never clash with modules from other vendors. What you see stays the same: names, menus, addresses and data. The modules move together, and the previous version is kept as a backup for one week.",
+    "Kein Umzug steht an.": "No move is pending.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Not moved, nothing has changed: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "The modules have moved, but not all are registered. Please run on the server: :befehle",
+    ":n Module sind umgezogen.": ":n modules have moved.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "This module is already installed here under its former name. Please choose \"Move now\" at the top.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "New version :v with a new internal name. It comes with the move at the top of this page.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Jobs for :module are still waiting in the queue. The move will be done on the next run.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "The store offers no package :neu for :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "The previous module is not in the modules directory.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "A module already exists under :name. The move is not carried out."
 }

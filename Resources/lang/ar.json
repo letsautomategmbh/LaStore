@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": "تعذّر حذف :n من :m نسخ احتياطية. هل تنقص خادم الويب الصلاحيات؟",
     "Alle Sicherungen sind gelöscht.": "تم حذف جميع النسخ الاحتياطية.",
     "Die Sicherung ist gelöscht.": "تم حذف النسخة الاحتياطية.",
-    "Diese Sicherung liess sich nicht löschen.": "تعذّر حذف هذه النسخة الاحتياطية."
+    "Diese Sicherung liess sich nicht löschen.": "تعذّر حذف هذه النسخة الاحتياطية.",
+    "Neue interne Namen für :n Module": "أسماء داخلية جديدة لـ :n وحدات",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "نقل جميع الوحدات وعددها :n إلى أسمائها الداخلية الجديدة الآن؟",
+    "Jetzt umziehen": "انقل الآن",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "تحمل وحداتنا الآن داخليًا البادئة «La» حتى لا تتعارض أبدًا مع وحدات موردين آخرين. ما تراه يبقى كما هو: الأسماء والقوائم والعناوين والبيانات. تنتقل الوحدات معًا، ويُحتفظ بالإصدار السابق أسبوعًا كنسخة احتياطية.",
+    "Kein Umzug steht an.": "لا يوجد نقل معلّق.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "لم يتم النقل، الحالة السابقة لم تتغير: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "نُقلت الوحدات، لكن ليست كلها مسجلة. يرجى التنفيذ على الخادم: :befehle",
+    ":n Module sind umgezogen.": "تم نقل :n وحدات.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "هذه الوحدة مثبتة هنا بالفعل باسمها السابق. يرجى اختيار «انقل الآن» في الأعلى.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "إصدار جديد :v باسم داخلي جديد. يأتي مع النقل في أعلى هذه الصفحة.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "لا تزال مهام لـ :module في قائمة الانتظار. سيتم النقل في التشغيل التالي.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "لا يقدم المتجر حزمة :neu لـ :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "الوحدة السابقة ليست في مجلد الوحدات.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "توجد وحدة بالاسم :name بالفعل. لن يتم النقل."
 }

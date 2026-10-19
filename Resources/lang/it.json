@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n di :m backup non sono stati eliminati. Al server web mancano i permessi?",
     "Alle Sicherungen sind gelöscht.": "Tutti i backup sono stati eliminati.",
     "Die Sicherung ist gelöscht.": "Il backup è stato eliminato.",
-    "Diese Sicherung liess sich nicht löschen.": "Non è stato possibile eliminare questo backup."
+    "Diese Sicherung liess sich nicht löschen.": "Non è stato possibile eliminare questo backup.",
+    "Neue interne Namen für :n Module": "Nuovi nomi interni per :n moduli",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Trasferire ora tutti i :n moduli ai loro nuovi nomi interni?",
+    "Jetzt umziehen": "Trasferisci ora",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "I nostri moduli portano ora internamente il prefisso «La», così da non entrare mai in conflitto con moduli di altri fornitori. Ciò che vedete resta uguale: nomi, menu, indirizzi e dati. I moduli vengono trasferiti insieme e la versione precedente resta per una settimana come backup.",
+    "Kein Umzug steht an.": "Nessun trasferimento in attesa.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Non trasferito, lo stato precedente è invariato: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "I moduli sono stati trasferiti, ma non tutti sono registrati. Eseguite sul server: :befehle",
+    ":n Module sind umgezogen.": ":n moduli sono stati trasferiti.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Questo modulo è già installato qui con il suo nome precedente. Scegliete «Trasferisci ora» in alto.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Nuova versione :v con un nuovo nome interno. Arriva con il trasferimento in cima a questa pagina.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Nella coda ci sono ancora lavori per :module. Il trasferimento verrà eseguito al prossimo passaggio.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "Lo store non offre alcun pacchetto :neu per :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Il modulo precedente non si trova nella cartella dei moduli.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Esiste già un modulo con il nome :name. Il trasferimento non viene eseguito."
 }

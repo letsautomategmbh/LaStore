@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":m yedekten :n tanesi silinemedi. Web sunucusunun izinleri eksik mi?",
     "Alle Sicherungen sind gelöscht.": "Tüm yedekler silindi.",
     "Die Sicherung ist gelöscht.": "Yedek silindi.",
-    "Diese Sicherung liess sich nicht löschen.": "Bu yedek silinemedi."
+    "Diese Sicherung liess sich nicht löschen.": "Bu yedek silinemedi.",
+    "Neue interne Namen für :n Module": ":n modül için yeni iç adlar",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Tüm :n modül şimdi yeni iç adlarına taşınsın mı?",
+    "Jetzt umziehen": "Şimdi taşı",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Modüllerimiz artık dahili olarak «La» önekini taşıyor; böylece başka sağlayıcıların modülleriyle asla çakışmazlar. Gördükleriniz aynı kalır: adlar, menüler, adresler ve veriler. Modüller birlikte taşınır ve önceki sürüm bir hafta yedek olarak saklanır.",
+    "Kein Umzug steht an.": "Bekleyen taşıma yok.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Taşınmadı, önceki durum değişmedi: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "Modüller taşındı ancak hepsi kaydedilmedi. Lütfen sunucuda çalıştırın: :befehle",
+    ":n Module sind umgezogen.": ":n modül taşındı.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Bu modül burada zaten eski adıyla kurulu. Lütfen yukarıdan «Şimdi taşı» seçeneğini seçin.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Yeni iç adlı yeni sürüm :v. Bu sayfanın üstündeki taşımayla gelir.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Kuyrukta hâlâ :module için işler var. Taşıma bir sonraki çalıştırmada yapılacak.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "Mağaza :alt için :neu paketi sunmuyor.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Önceki modül modül dizininde değil.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": ":name adıyla zaten bir modül var. Taşıma yapılmıyor."
 }

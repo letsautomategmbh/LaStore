@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": "Не вдалося видалити :n з :m резервних копій. Чи бракує прав веб-серверу?",
     "Alle Sicherungen sind gelöscht.": "Усі резервні копії видалено.",
     "Die Sicherung ist gelöscht.": "Резервну копію видалено.",
-    "Diese Sicherung liess sich nicht löschen.": "Не вдалося видалити цю резервну копію."
+    "Diese Sicherung liess sich nicht löschen.": "Не вдалося видалити цю резервну копію.",
+    "Neue interne Namen für :n Module": "Нові внутрішні назви для :n модулів",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Перенести зараз усі :n модулів на нові внутрішні назви?",
+    "Jetzt umziehen": "Перенести зараз",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Наші модулі тепер усередині мають префікс «La», щоб ніколи не конфліктувати з модулями інших постачальників. Те, що ви бачите, не змінюється: назви, меню, адреси та дані. Модулі переносяться разом, а попередня версія зберігається тиждень як резервна копія.",
+    "Kein Umzug steht an.": "Немає очікуваного перенесення.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Не перенесено, попередній стан не змінився: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "Модулі перенесено, але не всі зареєстровано. Виконайте на сервері: :befehle",
+    ":n Module sind umgezogen.": "Перенесено модулів: :n.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Цей модуль уже встановлено тут під попередньою назвою. Виберіть угорі «Перенести зараз».",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Нова версія :v з новою внутрішньою назвою. Вона прийде разом із перенесенням угорі цієї сторінки.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "У черзі ще є завдання для :module. Перенесення буде виконано під час наступного запуску.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "Магазин не пропонує пакет :neu для :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Попередній модуль не в каталозі модулів.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Модуль із назвою :name вже існує. Перенесення не виконується."
 }

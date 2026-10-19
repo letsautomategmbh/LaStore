@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":m 个备份中有 :n 个无法删除。是否 Web 服务器缺少权限？",
     "Alle Sicherungen sind gelöscht.": "所有备份已删除。",
     "Die Sicherung ist gelöscht.": "备份已删除。",
-    "Diese Sicherung liess sich nicht löschen.": "无法删除此备份。"
+    "Diese Sicherung liess sich nicht löschen.": "无法删除此备份。",
+    "Neue interne Namen für :n Module": ":n 个模块的新内部名称",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "现在将全部 :n 个模块迁移到新的内部名称？",
+    "Jetzt umziehen": "立即迁移",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "我们的模块现在在内部带有前缀“La”，以免与其他供应商的模块冲突。您看到的内容保持不变：名称、菜单、地址和数据。模块会一起迁移，上一个版本作为备份保留一周。",
+    "Kein Umzug steht an.": "没有待处理的迁移。",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "未迁移，之前的状态没有改变：:fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "模块已迁移，但并非全部已注册。请在服务器上运行：:befehle",
+    ":n Module sind umgezogen.": "已迁移 :n 个模块。",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "此模块已以旧名称安装在此。请选择上方的“立即迁移”。",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "带有新内部名称的新版本 :v。它随本页顶部的迁移一起到来。",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "队列中仍有 :module 的任务。迁移将在下次运行时进行。",
+    "Der Laden bietet für :alt kein Paket :neu an.": "商店没有为 :alt 提供 :neu 包。",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "之前的模块不在模块目录中。",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "名为 :name 的模块已存在。不执行迁移。"
 }

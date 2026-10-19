@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":m 件中 :n 件のバックアップを削除できませんでした。Web サーバーの権限が不足していませんか？",
     "Alle Sicherungen sind gelöscht.": "すべてのバックアップを削除しました。",
     "Die Sicherung ist gelöscht.": "バックアップを削除しました。",
-    "Diese Sicherung liess sich nicht löschen.": "このバックアップを削除できませんでした。"
+    "Diese Sicherung liess sich nicht löschen.": "このバックアップを削除できませんでした。",
+    "Neue interne Namen für :n Module": ":n 個のモジュールの新しい内部名",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": ":n 個のモジュールすべてを今すぐ新しい内部名に移行しますか？",
+    "Jetzt umziehen": "今すぐ移行",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "当社のモジュールは、他社のモジュールと衝突しないよう、内部で接頭辞「La」を持つようになりました。表示されるもの（名前、メニュー、アドレス、データ）は変わりません。モジュールはまとめて移行され、以前のバージョンは 1 週間バックアップとして残ります。",
+    "Kein Umzug steht an.": "保留中の移行はありません。",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "移行されていません。以前の状態は変わりません: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "モジュールは移行しましたが、すべてが登録されたわけではありません。サーバーで実行してください: :befehle",
+    ":n Module sind umgezogen.": ":n 個のモジュールを移行しました。",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "このモジュールは以前の名前ですでにインストールされています。上の「今すぐ移行」を選んでください。",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "新しい内部名の新バージョン :v。このページ上部の移行とともに届きます。",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "キューに :module のジョブがまだ残っています。移行は次回の実行で行われます。",
+    "Der Laden bietet für :alt kein Paket :neu an.": "ストアは :alt 向けのパッケージ :neu を提供していません。",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "以前のモジュールがモジュールディレクトリにありません。",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": ":name という名前のモジュールがすでにあります。移行は行われません。"
 }

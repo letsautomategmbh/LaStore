@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": "Nie udało się usunąć :n z :m kopii. Czy serwerowi WWW brakuje uprawnień?",
     "Alle Sicherungen sind gelöscht.": "Wszystkie kopie zostały usunięte.",
     "Die Sicherung ist gelöscht.": "Kopia została usunięta.",
-    "Diese Sicherung liess sich nicht löschen.": "Nie udało się usunąć tej kopii."
+    "Diese Sicherung liess sich nicht löschen.": "Nie udało się usunąć tej kopii.",
+    "Neue interne Namen für :n Module": "Nowe nazwy wewnętrzne dla :n modułów",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Przenieść teraz wszystkie :n moduły na nowe nazwy wewnętrzne?",
+    "Jetzt umziehen": "Przenieś teraz",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Nasze moduły mają teraz wewnętrznie prefiks „La”, aby nigdy nie kolidowały z modułami innych dostawców. To, co Państwo widzą, pozostaje bez zmian: nazwy, menu, adresy i dane. Moduły przenoszą się razem, a poprzednia wersja pozostaje przez tydzień jako kopia zapasowa.",
+    "Kein Umzug steht an.": "Brak oczekującego przeniesienia.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Nie przeniesiono, poprzedni stan bez zmian: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "Moduły zostały przeniesione, ale nie wszystkie są zarejestrowane. Proszę wykonać na serwerze: :befehle",
+    ":n Module sind umgezogen.": "Przeniesiono moduły: :n.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Ten moduł jest już tu zainstalowany pod swoją dawną nazwą. Proszę wybrać u góry „Przenieś teraz”.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Nowa wersja :v z nową nazwą wewnętrzną. Pojawi się wraz z przeniesieniem u góry tej strony.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "W kolejce wciąż czekają zadania dla :module. Przeniesienie nastąpi przy następnym przebiegu.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "Sklep nie oferuje pakietu :neu dla :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Poprzedni moduł nie znajduje się w katalogu modułów.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Pod nazwą :name istnieje już moduł. Przeniesienie nie zostanie wykonane."
 }

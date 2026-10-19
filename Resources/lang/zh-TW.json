@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":m 個備份中有 :n 個無法刪除。是否 Web 伺服器缺少權限？",
     "Alle Sicherungen sind gelöscht.": "所有備份已刪除。",
     "Die Sicherung ist gelöscht.": "備份已刪除。",
-    "Diese Sicherung liess sich nicht löschen.": "無法刪除此備份。"
+    "Diese Sicherung liess sich nicht löschen.": "無法刪除此備份。",
+    "Neue interne Namen für :n Module": ":n 個模組的新內部名稱",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "現在將全部 :n 個模組遷移到新的內部名稱？",
+    "Jetzt umziehen": "立即遷移",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "我們的模組現在在內部帶有前綴「La」，以免與其他供應商的模組衝突。您看到的內容保持不變：名稱、選單、網址和資料。模組會一起遷移，上一個版本作為備份保留一週。",
+    "Kein Umzug steht an.": "沒有待處理的遷移。",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "未遷移，先前的狀態沒有改變：:fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "模組已遷移，但並非全部已註冊。請在伺服器上執行：:befehle",
+    ":n Module sind umgezogen.": "已遷移 :n 個模組。",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "此模組已以舊名稱安裝在此。請選擇上方的「立即遷移」。",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "帶有新內部名稱的新版本 :v。它隨本頁頂部的遷移一起到來。",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "佇列中仍有 :module 的工作。遷移將在下次執行時進行。",
+    "Der Laden bietet für :alt kein Paket :neu an.": "商店沒有為 :alt 提供 :neu 套件。",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "先前的模組不在模組目錄中。",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "名為 :name 的模組已存在。不執行遷移。"
 }

@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n av :m sikkerhetskopier kunne ikke slettes. Mangler webserveren rettigheter?",
     "Alle Sicherungen sind gelöscht.": "Alle sikkerhetskopier er slettet.",
     "Die Sicherung ist gelöscht.": "Sikkerhetskopien er slettet.",
-    "Diese Sicherung liess sich nicht löschen.": "Denne sikkerhetskopien kunne ikke slettes."
+    "Diese Sicherung liess sich nicht löschen.": "Denne sikkerhetskopien kunne ikke slettes.",
+    "Neue interne Namen für :n Module": "Nye interne navn for :n moduler",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Flytte alle :n moduler til de nye interne navnene nå?",
+    "Jetzt umziehen": "Flytt nå",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Modulene våre har nå internt prefikset «La», slik at de aldri kolliderer med moduler fra andre leverandører. Det du ser, forblir det samme: navn, menyer, adresser og data. Modulene flytter sammen, og den forrige versjonen beholdes en uke som sikkerhetskopi.",
+    "Kein Umzug steht an.": "Ingen flytting venter.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Ikke flyttet, forrige tilstand er uendret: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "Modulene er flyttet, men ikke alle er registrert. Kjør på serveren: :befehle",
+    ":n Module sind umgezogen.": ":n moduler er flyttet.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Denne modulen er allerede installert her under sitt tidligere navn. Velg «Flytt nå» øverst.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Ny versjon :v med nytt internt navn. Den kommer med flyttingen øverst på denne siden.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Det ligger fortsatt jobber for :module i køen. Flyttingen skjer ved neste kjøring.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "Butikken tilbyr ingen pakke :neu for :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Den forrige modulen ligger ikke i modulmappen.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Det finnes allerede en modul under :name. Flyttingen utføres ikke."
 }

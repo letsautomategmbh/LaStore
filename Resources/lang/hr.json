@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n od :m sigurnosnih kopija nije moguće izbrisati. Nedostaju li web-poslužitelju prava?",
     "Alle Sicherungen sind gelöscht.": "Sve sigurnosne kopije su izbrisane.",
     "Die Sicherung ist gelöscht.": "Sigurnosna kopija je izbrisana.",
-    "Diese Sicherung liess sich nicht löschen.": "Ovu sigurnosnu kopiju nije moguće izbrisati."
+    "Diese Sicherung liess sich nicht löschen.": "Ovu sigurnosnu kopiju nije moguće izbrisati.",
+    "Neue interne Namen für :n Module": "Nova interna imena za :n modula",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Premjestiti sada svih :n modula na njihova nova interna imena?",
+    "Jetzt umziehen": "Premjesti sada",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Naši moduli sada interno nose prefiks „La”, kako se nikad ne bi sukobili s modulima drugih dobavljača. Ono što vidite ostaje isto: imena, izbornici, adrese i podaci. Moduli se premještaju zajedno, a prethodna verzija ostaje tjedan dana kao sigurnosna kopija.",
+    "Kein Umzug steht an.": "Nema premještanja na čekanju.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Nije premješteno, prethodno stanje je nepromijenjeno: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "Moduli su premješteni, ali nisu svi prijavljeni. Pokrenite na poslužitelju: :befehle",
+    ":n Module sind umgezogen.": "Premješteno modula: :n.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Ovaj je modul ovdje već instaliran pod svojim prijašnjim imenom. Odaberite gore „Premjesti sada”.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Nova verzija :v s novim internim imenom. Dolazi s premještanjem na vrhu ove stranice.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "U redu još čekaju zadaci za :module. Premještanje će se obaviti pri sljedećem pokretanju.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "Trgovina ne nudi paket :neu za :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Prethodni modul nije u direktoriju modula.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Pod imenom :name već postoji modul. Premještanje se ne provodi."
 }

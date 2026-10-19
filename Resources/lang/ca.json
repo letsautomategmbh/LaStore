@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": "No s'han pogut eliminar :n de :m còpies. Al servidor web li falten permisos?",
     "Alle Sicherungen sind gelöscht.": "S'han eliminat totes les còpies.",
     "Die Sicherung ist gelöscht.": "S'ha eliminat la còpia.",
-    "Diese Sicherung liess sich nicht löschen.": "No s'ha pogut eliminar aquesta còpia."
+    "Diese Sicherung liess sich nicht löschen.": "No s'ha pogut eliminar aquesta còpia.",
+    "Neue interne Namen für :n Module": "Noms interns nous per a :n mòduls",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Voleu traslladar ara els :n mòduls als seus noms interns nous?",
+    "Jetzt umziehen": "Trasllada ara",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Els nostres mòduls porten ara internament el prefix «La», perquè no xoquin mai amb mòduls d'altres proveïdors. El que veieu no canvia: noms, menús, adreces i dades. Els mòduls es traslladen junts i la versió anterior es conserva una setmana com a còpia.",
+    "Kein Umzug steht an.": "No hi ha cap trasllat pendent.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "No s'ha traslladat, l'estat anterior no ha canviat: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "Els mòduls s'han traslladat, però no tots estan registrats. Executeu al servidor: :befehle",
+    ":n Module sind umgezogen.": "S'han traslladat :n mòduls.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Aquest mòdul ja està instal·lat aquí amb el seu nom anterior. Trieu «Trasllada ara» a dalt.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Versió nova :v amb un nom intern nou. Arriba amb el trasllat de dalt d'aquesta pàgina.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Encara hi ha tasques de :module a la cua. El trasllat es farà a la propera execució.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "La botiga no ofereix cap paquet :neu per a :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "El mòdul anterior no és al directori de mòduls.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Ja hi ha un mòdul amb el nom :name. No es fa el trasllat."
 }

@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n / :m varmuuskopiota ei voitu poistaa. Puuttuuko verkkopalvelimelta oikeuksia?",
     "Alle Sicherungen sind gelöscht.": "Kaikki varmuuskopiot on poistettu.",
     "Die Sicherung ist gelöscht.": "Varmuuskopio on poistettu.",
-    "Diese Sicherung liess sich nicht löschen.": "Tätä varmuuskopiota ei voitu poistaa."
+    "Diese Sicherung liess sich nicht löschen.": "Tätä varmuuskopiota ei voitu poistaa.",
+    "Neue interne Namen für :n Module": "Uudet sisäiset nimet :n moduulille",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Siirretäänkö kaikki :n moduulia nyt uusiin sisäisiin nimiinsä?",
+    "Jetzt umziehen": "Siirrä nyt",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Moduuleillamme on nyt sisäisesti etuliite ”La”, jotta ne eivät koskaan törmää muiden toimittajien moduuleihin. Näkemäsi pysyy samana: nimet, valikot, osoitteet ja tiedot. Moduulit siirtyvät yhdessä, ja edellinen versio säilytetään viikon varmuuskopiona.",
+    "Kein Umzug steht an.": "Siirtoa ei ole odottamassa.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Ei siirretty, aiempi tila on ennallaan: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "Moduulit on siirretty, mutta kaikkia ei ole rekisteröity. Suorita palvelimella: :befehle",
+    ":n Module sind umgezogen.": ":n moduulia on siirretty.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Tämä moduuli on jo asennettu tänne aiemmalla nimellään. Valitse ylhäältä ”Siirrä nyt”.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Uusi versio :v uudella sisäisellä nimellä. Se tulee tämän sivun yläosan siirron mukana.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Jonossa on vielä töitä moduulille :module. Siirto tehdään seuraavalla ajokerralla.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "Kauppa ei tarjoa pakettia :neu kohteelle :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Edellinen moduuli ei ole moduulikansiossa.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Nimellä :name on jo moduuli. Siirtoa ei tehdä."
 }

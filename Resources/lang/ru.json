@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": "Не удалось удалить :n из :m резервных копий. Не хватает прав у веб-сервера?",
     "Alle Sicherungen sind gelöscht.": "Все резервные копии удалены.",
     "Die Sicherung ist gelöscht.": "Резервная копия удалена.",
-    "Diese Sicherung liess sich nicht löschen.": "Не удалось удалить эту резервную копию."
+    "Diese Sicherung liess sich nicht löschen.": "Не удалось удалить эту резервную копию.",
+    "Neue interne Namen für :n Module": "Новые внутренние имена для :n модулей",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Перенести сейчас все :n модулей на новые внутренние имена?",
+    "Jetzt umziehen": "Перенести сейчас",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Наши модули теперь внутри носят префикс «La», чтобы никогда не конфликтовать с модулями других поставщиков. То, что вы видите, не меняется: названия, меню, адреса и данные. Модули переносятся вместе, а предыдущая версия хранится неделю как резервная копия.",
+    "Kein Umzug steht an.": "Нет ожидающего переноса.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Не перенесено, прежнее состояние не изменилось: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "Модули перенесены, но не все зарегистрированы. Выполните на сервере: :befehle",
+    ":n Module sind umgezogen.": "Перенесено модулей: :n.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Этот модуль уже установлен здесь под прежним именем. Выберите вверху «Перенести сейчас».",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Новая версия :v с новым внутренним именем. Она придёт вместе с переносом вверху этой страницы.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "В очереди ещё есть задания для :module. Перенос будет выполнен при следующем запуске.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "Магазин не предлагает пакет :neu для :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Предыдущий модуль находится не в каталоге модулей.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Модуль с именем :name уже существует. Перенос не выполняется."
 }

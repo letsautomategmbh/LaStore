@@ -307,4 +307,108 @@ class PackageInstallerTest extends TestCase
         $this->assertDirectoryExists($neu, 'Gerade angelegt: das koennte ein laufender Vorgang sein.');
     }
 
+    // ─────────────────────────────────────────── Umzug (Bexio -> LaBexio)
+
+    protected function altesModul($ordner = 'Bexio', $alias = 'bexio')
+    {
+        mkdir($this->arbeit.'/Modules/'.$ordner, 0777, true);
+        file_put_contents($this->arbeit.'/Modules/'.$ordner.'/module.json', json_encode(array('name' => $ordner, 'alias' => $alias, 'version' => '3.1.1')));
+
+        return $this->arbeit.'/Modules/'.$ordner;
+    }
+
+    protected function neuesPaket($version = '4.0.0')
+    {
+        return $this->archiv(array(
+            'LaBexio/module.json' => json_encode(array('name' => 'LaBexio', 'alias' => 'labexio', 'version' => $version)),
+        ));
+    }
+
+    /**
+     * Der alte Ordner geht beiseite, der neue kommt unter seinem Namen --
+     * und danach findet FreeScout genau EIN Modul, nicht zwei.
+     */
+    public function testUmzugErsetztDenAltenOrdnerUndLaesstKeinenZweiten()
+    {
+        $alt = $this->altesModul();
+
+        $ergebnis = $this->installer()->umziehen($this->neuesPaket(), 'labexio', $alt);
+
+        $this->assertSame('LaBexio', $ergebnis['name']);
+        $this->assertFileExists($this->arbeit.'/Modules/LaBexio/module.json');
+        $this->assertDirectoryDoesNotExist($alt);
+        $this->assertFileExists($ergebnis['backup'].'/module.json', 'Der alte Stand bleibt als Sicherung.');
+        $this->assertStringStartsWith('.Bexio.vorher-', basename($ergebnis['backup']));
+        $this->assertCount(1, (array) glob($this->arbeit.'/Modules/*/module.json'));
+    }
+
+    /** Der alte Ordner wird über den Pfad gefunden, nicht über den Namen (Invoicing hiess «Activities»). */
+    public function testUmzugNimmtDenAltenOrdnerAuchUnterAnderemNamen()
+    {
+        $alt = $this->altesModul('Activities', 'invoicing');
+        $zip = $this->archiv(array(
+            'LaInvoicing/module.json' => json_encode(array('name' => 'LaInvoicing', 'alias' => 'lainvoicing', 'version' => '3.0.0')),
+        ));
+
+        $this->installer()->umziehen($zip, 'lainvoicing', $alt);
+
+        $this->assertDirectoryDoesNotExist($alt);
+        $this->assertFileExists($this->arbeit.'/Modules/LaInvoicing/module.json');
+    }
+
+    public function testUmzugMitFalschemKuerzelImPaketAendertNichts()
+    {
+        $alt = $this->altesModul();
+
+        try {
+            $this->installer()->umziehen($this->neuesPaket(), 'lavault', $alt);
+            $this->fail('Ein Paket mit fremdem Kürzel darf nicht umziehen.');
+        } catch (StoreException $e) {
+            $this->assertSame('alias_mismatch', $e->errorCode());
+        }
+
+        $this->assertFileExists($alt.'/module.json');
+        $this->assertDirectoryDoesNotExist($this->arbeit.'/Modules/LaBexio');
+    }
+
+    /** Liegt unter dem neuen Namen schon etwas, wird nichts verschmolzen. */
+    public function testUmzugInEinenBelegtenOrdnerUnterbleibt()
+    {
+        $alt = $this->altesModul();
+        mkdir($this->arbeit.'/Modules/LaBexio', 0777, true);
+        file_put_contents($this->arbeit.'/Modules/LaBexio/eigen.txt', 'fremd');
+
+        try {
+            $this->installer()->umziehen($this->neuesPaket(), 'labexio', $alt);
+            $this->fail('Ein belegter Zielordner muss den Umzug verhindern.');
+        } catch (StoreException $e) {
+            $this->assertSame('umzug_ziel_belegt', $e->errorCode());
+        }
+
+        $this->assertFileExists($alt.'/module.json');
+        $this->assertFileExists($this->arbeit.'/Modules/LaBexio/eigen.txt');
+    }
+
+    public function testUmzugAusserhalbDesModulverzeichnissesUnterbleibt()
+    {
+        $draussen = $this->arbeit.'/Anderswo';
+        mkdir($draussen, 0777, true);
+
+        $this->expectException(StoreException::class);
+        $this->installer()->umziehen($this->neuesPaket(), 'labexio', $draussen);
+    }
+
+    /** Zurücknehmen: neuer Ordner weg, alter wieder an seinem Platz. */
+    public function testUmzugLaesstSichZuruecknehmen()
+    {
+        $alt = $this->altesModul();
+        $installer = $this->installer();
+
+        $ergebnis = $installer->umziehen($this->neuesPaket(), 'labexio', $alt);
+
+        $this->assertTrue($installer->umzugZuruecknehmen($ergebnis));
+        $this->assertFileExists($alt.'/module.json');
+        $this->assertDirectoryDoesNotExist($this->arbeit.'/Modules/LaBexio');
+        $this->assertSame(array($this->arbeit.'/Modules/Bexio/module.json'), (array) glob($this->arbeit.'/Modules/*/module.json'));
+    }
 }

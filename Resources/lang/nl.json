@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n van :m back-ups konden niet worden verwijderd. Heeft de webserver geen rechten?",
     "Alle Sicherungen sind gelöscht.": "Alle back-ups zijn verwijderd.",
     "Die Sicherung ist gelöscht.": "De back-up is verwijderd.",
-    "Diese Sicherung liess sich nicht löschen.": "Deze back-up kon niet worden verwijderd."
+    "Diese Sicherung liess sich nicht löschen.": "Deze back-up kon niet worden verwijderd.",
+    "Neue interne Namen für :n Module": "Nieuwe interne namen voor :n modules",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Alle :n modules nu naar hun nieuwe interne namen verhuizen?",
+    "Jetzt umziehen": "Nu verhuizen",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Onze modules dragen intern voortaan het voorvoegsel \"La\", zodat ze nooit botsen met modules van andere leveranciers. Wat u ziet blijft hetzelfde: namen, menu's, adressen en gegevens. De modules verhuizen samen, en de vorige versie blijft een week als back-up bewaard.",
+    "Kein Umzug steht an.": "Er staat geen verhuizing klaar.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Niet verhuisd, de vorige toestand is ongewijzigd: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "De modules zijn verhuisd, maar niet alle zijn aangemeld. Voer op de server uit: :befehle",
+    ":n Module sind umgezogen.": ":n modules zijn verhuisd.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Deze module is hier al onder haar vroegere naam geïnstalleerd. Kies bovenaan \"Nu verhuizen\".",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Nieuwe versie :v met een nieuwe interne naam. Ze komt mee met de verhuizing bovenaan deze pagina.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Er wachten nog taken voor :module in de wachtrij. De verhuizing gebeurt bij de volgende run.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "De winkel biedt geen pakket :neu voor :alt aan.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "De vorige module staat niet in de modulemap.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Onder :name staat al een module. De verhuizing wordt niet uitgevoerd."
 }

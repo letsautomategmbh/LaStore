@@ -212,6 +212,114 @@ class PackageInstaller
         }
     }
 
+    /**
+     * Ein umbenanntes Modul an die Stelle des alten legen (Bexio -> LaBexio).
+     *
+     * Anders als install(): das Paket trägt ein ANDERES Kürzel als das
+     * installierte Modul, und der Zielordner heisst anders. install() legte
+     * nur einen gleichnamigen Ordner beiseite -- `LaBexio` neben `Bexio`, und
+     * FreeScout lüde beide. Hier wird der ALTE Ordner beiseitegelegt, egal wie
+     * er heisst; gefunden wird er vom Aufrufer über das Kürzel, nicht über
+     * den Namen (Invoicing hiess auf älteren Anlagen intern «Activities»).
+     *
+     * Nichts ausser Dateien. Datenbank und Anmeldung macht Support\Umzug,
+     * weil mehrere Module zusammen umziehen und nur gemeinsam zurückgehen.
+     *
+     * @param string $zip       geprüftes Paket
+     * @param string $neu       Kürzel, das im Paket stehen muss
+     * @param string $altOrdner Pfad des installierten alten Moduls
+     *
+     * @return array{name: string, version: string, ziel: string, backup: string, alt: string}
+     *
+     * @throws StoreException
+     */
+    public function umziehen($zip, $neu, $altOrdner)
+    {
+        if (!class_exists('\ZipArchive')) {
+            throw new StoreException(
+                Text::get('Auf diesem Server fehlt die PHP-Erweiterung zip. Das Paket lässt sich nicht entpacken.'),
+                'no_zip'
+            );
+        }
+
+        if (!is_dir($altOrdner) || realpath(dirname($altOrdner)) !== realpath($this->modulesPath())) {
+            throw new StoreException(Text::get('Das bisherige Modul liegt nicht im Modulverzeichnis.'), 'umzug_alt_fehlt');
+        }
+
+        $this->alteArbeitWegraeumen();
+
+        $auspack = $this->arbeitsDir('.lastore-auspack-');
+
+        try {
+            $ordner = $this->entpacken($zip, $auspack);
+            $json = $this->modulJson($auspack.'/'.$ordner);
+            $imPaket = isset($json['alias']) ? strtolower($json['alias']) : '';
+
+            if ($imPaket !== strtolower($neu)) {
+                throw new StoreException(
+                    Text::get('Das Paket enthält :gefunden, angefordert war :erwartet. Es wird nicht installiert.',
+                        array('gefunden' => $imPaket ?: '—', 'erwartet' => $neu)),
+                    'alias_mismatch'
+                );
+            }
+
+            $name = isset($json['name']) ? $json['name'] : $ordner;
+            $ziel = $this->modulesPath().'/'.$name;
+
+            // Liegt unter dem neuen Namen schon etwas, das nicht das alte
+            // Modul ist, wird nichts angefasst: zwei Module mit getrennten
+            // Daten zu verschmelzen ist keine Entscheidung für einen Nachtlauf.
+            if (file_exists($ziel) && realpath($ziel) !== realpath($altOrdner)) {
+                throw new StoreException(
+                    Text::get('Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.', array('name' => $name)),
+                    'umzug_ziel_belegt'
+                );
+            }
+
+            $sicherung = $this->beiseite($altOrdner);
+
+            if (!@rename($auspack.'/'.$ordner, $ziel)) {
+                $this->zurueck($sicherung, $altOrdner);
+
+                throw new StoreException(
+                    Text::get('Das Modulverzeichnis liess sich nicht ersetzen. Der bisherige Stand ist wiederhergestellt.'),
+                    'swap_failed'
+                );
+            }
+
+            return array(
+                'name'    => $name,
+                'version' => isset($json['version']) ? $json['version'] : '',
+                'ziel'    => $ziel,
+                'backup'  => $sicherung,
+                'alt'     => $altOrdner,
+            );
+        } finally {
+            $this->loeschen($auspack);
+            @unlink($zip);
+        }
+    }
+
+    /**
+     * Einen Umzug zurücknehmen: neuen Ordner weg, alten zurück an seinen Platz.
+     *
+     * @param array $ergebnis Rückgabe von umziehen()
+     *
+     * @return bool ob der alte Stand wieder dasteht
+     */
+    public function umzugZuruecknehmen(array $ergebnis)
+    {
+        if (!empty($ergebnis['ziel']) && is_dir($ergebnis['ziel']) && $ergebnis['ziel'] !== $ergebnis['alt']) {
+            $this->loeschen($ergebnis['ziel']);
+        }
+
+        if (!empty($ergebnis['backup']) && is_dir($ergebnis['backup']) && !file_exists($ergebnis['alt'])) {
+            @rename($ergebnis['backup'], $ergebnis['alt']);
+        }
+
+        return is_dir($ergebnis['alt']);
+    }
+
     // ───────────────────────────────────────────────────────── innere Teile
 
     /**

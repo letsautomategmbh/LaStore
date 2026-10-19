@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":m개 중 :n개의 백업을 삭제하지 못했습니다. 웹 서버에 권한이 없습니까?",
     "Alle Sicherungen sind gelöscht.": "모든 백업이 삭제되었습니다.",
     "Die Sicherung ist gelöscht.": "백업이 삭제되었습니다.",
-    "Diese Sicherung liess sich nicht löschen.": "이 백업을 삭제하지 못했습니다."
+    "Diese Sicherung liess sich nicht löschen.": "이 백업을 삭제하지 못했습니다.",
+    "Neue interne Namen für :n Module": ":n개 모듈의 새 내부 이름",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": ":n개 모듈을 모두 지금 새 내부 이름으로 옮기시겠습니까?",
+    "Jetzt umziehen": "지금 옮기기",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "저희 모듈은 다른 공급업체의 모듈과 충돌하지 않도록 이제 내부적으로 «La» 접두사를 사용합니다. 보이는 것은 그대로입니다: 이름, 메뉴, 주소, 데이터. 모듈은 함께 옮겨지며 이전 버전은 일주일 동안 백업으로 남습니다.",
+    "Kein Umzug steht an.": "대기 중인 이전이 없습니다.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "옮기지 않았습니다. 이전 상태는 그대로입니다: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "모듈을 옮겼지만 모두 등록되지는 않았습니다. 서버에서 실행하십시오: :befehle",
+    ":n Module sind umgezogen.": ":n개 모듈을 옮겼습니다.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "이 모듈은 이미 이전 이름으로 설치되어 있습니다. 위의 «지금 옮기기»를 선택하십시오.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "새 내부 이름의 새 버전 :v. 이 페이지 위쪽의 이전과 함께 제공됩니다.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "대기열에 아직 :module 작업이 있습니다. 이전은 다음 실행 때 진행됩니다.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "스토어에 :alt용 :neu 패키지가 없습니다.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "이전 모듈이 모듈 디렉터리에 없습니다.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": ":name 이름의 모듈이 이미 있습니다. 이전을 진행하지 않습니다."
 }

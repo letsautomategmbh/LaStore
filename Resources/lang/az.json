@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":m ehtiyat nüsxədən :n silinə bilmədi. Veb serverin icazələri çatışmır?",
     "Alle Sicherungen sind gelöscht.": "Bütün ehtiyat nüsxələr silindi.",
     "Die Sicherung ist gelöscht.": "Ehtiyat nüsxə silindi.",
-    "Diese Sicherung liess sich nicht löschen.": "Bu ehtiyat nüsxə silinə bilmədi."
+    "Diese Sicherung liess sich nicht löschen.": "Bu ehtiyat nüsxə silinə bilmədi.",
+    "Neue interne Namen für :n Module": ":n modul üçün yeni daxili adlar",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Bütün :n modul indi yeni daxili adlarına köçürülsün?",
+    "Jetzt umziehen": "İndi köçür",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Modullarımız artıq daxildə «La» prefiksini daşıyır ki, digər təchizatçıların modulları ilə heç vaxt toqquşmasın. Gördükləriniz dəyişmir: adlar, menyular, ünvanlar və məlumatlar. Modullar birlikdə köçür və əvvəlki versiya bir həftə ehtiyat nüsxə kimi saxlanılır.",
+    "Kein Umzug steht an.": "Gözləyən köçürmə yoxdur.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Köçürülmədi, əvvəlki vəziyyət dəyişməyib: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "Modullar köçürüldü, lakin hamısı qeydiyyatdan keçməyib. Serverdə icra edin: :befehle",
+    ":n Module sind umgezogen.": ":n modul köçürüldü.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Bu modul burada artıq əvvəlki adı ilə quraşdırılıb. Yuxarıda «İndi köçür» seçin.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Yeni daxili adla yeni versiya :v. Bu səhifənin yuxarısındakı köçürmə ilə gəlir.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Növbədə hələ :module üçün tapşırıqlar var. Köçürmə növbəti işə salınmada ediləcək.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "Mağaza :alt üçün :neu paketi təklif etmir.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Əvvəlki modul modullar qovluğunda deyil.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": ":name adı ilə artıq modul var. Köçürmə edilmir."
 }

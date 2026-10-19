@@ -52,6 +52,13 @@ class InstalledModules
         $licenses = License::all()->keyBy('product_alias');
         $rows = array();
 
+        // Umbenannte Module (bexio -> labexio): das installierte alte Modul
+        // gehört zum Katalogeintrag mit dem neuen Kürzel. Ohne diese Karte
+        // fände es keinen Eintrag mehr, fiele als «fremd» aus der Liste, und
+        // daneben stünde dasselbe Produkt als «nicht installiert».
+        $ersetzt = Umzug::ersetzungen();
+        $vergeben = array();
+
         foreach (\Module::all() as $module) {
             $alias = $module->getAlias();
 
@@ -59,8 +66,13 @@ class InstalledModules
                 continue;
             }
 
-            $entry = $catalog->get($alias);
+            $neu = isset($ersetzt[$alias]) ? $ersetzt[$alias] : null;
+            $entry = $catalog->get($neu ?: $alias);
             $license = $licenses->get($alias);
+
+            if ($neu) {
+                $vergeben[$neu] = true;
+            }
 
             $rows[$alias] = array(
                 'alias'       => $alias,
@@ -77,6 +89,8 @@ class InstalledModules
                 'license'     => $license,
                 'unsigned_update' => self::unsignedUpdatePath($module),
                 'state'       => self::state($entry, $license),
+                // Das neue Kürzel, wenn dieses Modul noch umziehen muss.
+                'umzug'       => $neu,
                 /*
                  * Das Sinnbild aus der module.json des installierten Moduls -
                  * genau die Quelle, aus der FreeScout es auf seiner eigenen
@@ -91,7 +105,10 @@ class InstalledModules
                  * Modulliste daneben sieht.
                  */
                 'img'         => $module->get('img') ?: ($entry ? $entry->value('img') : null),
-                'summary'     => $entry ? $entry->value('summary') : (string) $module->getDescription(),
+                // Nie null: der Katalog liefert `summary: null`, wo der Laden
+                // keinen Text hat, und e(null) bricht unter PHP 8.5 die
+                // ganze Seite ab. Dann die Beschreibung aus der module.json.
+                'summary'     => (string) (($entry ? $entry->value('summary') : null) ?: $module->getDescription()),
                 'details_url' => $entry ? self::shopUrl($alias) : null,
             );
         }
@@ -99,7 +116,7 @@ class InstalledModules
         // Katalogeintraege, die hier nicht installiert sind - damit die Liste
         // auch zeigt, was es noch gaebe.
         foreach ($catalog as $alias => $entry) {
-            if (isset($rows[$alias])) {
+            if (isset($rows[$alias]) || isset($vergeben[$alias])) {
                 continue;
             }
 
@@ -113,8 +130,9 @@ class InstalledModules
                 'license'     => $licenses->get($alias),
                 'unsigned_update' => null,
                 'state'       => self::STATE_AVAILABLE,
+                'umzug'       => null,
                 'img'         => $entry->value('img'),
-                'summary'     => $entry->value('summary'),
+                'summary'     => (string) $entry->value('summary'),
                 'details_url' => self::shopUrl($alias),
             );
         }

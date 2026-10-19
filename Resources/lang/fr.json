@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n sur :m sauvegardes n'ont pas pu être supprimées. Le serveur web manque-t-il de droits ?",
     "Alle Sicherungen sind gelöscht.": "Toutes les sauvegardes ont été supprimées.",
     "Die Sicherung ist gelöscht.": "La sauvegarde a été supprimée.",
-    "Diese Sicherung liess sich nicht löschen.": "Cette sauvegarde n'a pas pu être supprimée."
+    "Diese Sicherung liess sich nicht löschen.": "Cette sauvegarde n'a pas pu être supprimée.",
+    "Neue interne Namen für :n Module": "Nouveaux noms internes pour :n modules",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Migrer maintenant les :n modules vers leurs nouveaux noms internes ?",
+    "Jetzt umziehen": "Migrer maintenant",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Nos modules portent désormais le préfixe « La » en interne, afin de ne jamais entrer en conflit avec les modules d'autres éditeurs. Ce que vous voyez ne change pas : noms, menus, adresses et données. Les modules migrent ensemble, et la version précédente est conservée une semaine comme sauvegarde.",
+    "Kein Umzug steht an.": "Aucune migration en attente.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Rien n'a été migré, l'état précédent est inchangé : :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "Les modules ont migré, mais tous ne sont pas enregistrés. Veuillez exécuter sur le serveur : :befehle",
+    ":n Module sind umgezogen.": ":n modules ont migré.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Ce module est déjà installé ici sous son ancien nom. Veuillez choisir « Migrer maintenant » en haut.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Nouvelle version :v avec un nouveau nom interne. Elle arrive avec la migration en haut de cette page.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Des tâches pour :module attendent encore dans la file. La migration sera faite au prochain passage.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "La boutique ne propose pas de paquet :neu pour :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Le module précédent ne se trouve pas dans le répertoire des modules.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Un module existe déjà sous :name. La migration n'est pas effectuée."
 }

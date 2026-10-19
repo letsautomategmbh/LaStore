@@ -102,7 +102,14 @@
             @endif
         </div>
 
-        @if ($neuer && $zustand === $lizenziert)
+        @if (!empty($row['umzug']) && $zustand === $lizenziert)
+            {{-- Ein umbenanntes Modul wird nicht einzeln aktualisiert: es
+                 zieht mit allen anderen zusammen um, siehe Support\Umzug.
+                 Der Knopf dafür steht einmal oben auf der Seite. --}}
+            <div class="alert alert-info alert-module-update">
+                {{ __('Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.', ['v' => $row['available']]) }}
+            </div>
+        @elseif ($neuer && $zustand === $lizenziert)
             <div class="alert alert-warning alert-module-update">
                 {{ __('Eine neue Fassung ist verfügbar') }}: <strong>{{ $row['available'] }}</strong>
                 <form method="POST" action="{{ route('lastore.install') }}" class="margin-left-10" style="display:inline">

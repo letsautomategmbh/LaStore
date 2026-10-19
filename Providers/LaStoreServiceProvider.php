@@ -10,6 +10,7 @@ use Modules\LaStore\Console\UpdateCommand;
 use Modules\LaStore\Console\SelfUpdateCommand;
 use Modules\LaStore\Console\SicherungenCommand;
 use Modules\LaStore\Console\SyncCommand;
+use Modules\LaStore\Console\UmzugCommand;
 use Modules\LaStore\Entities\CatalogEntry;
 use Modules\LaStore\Support\InstalledModules;
 use Modules\LaStore\Support\Marke;
@@ -80,6 +81,7 @@ class LaStoreServiceProvider extends ServiceProvider
             UpdateCommand::class,
             SelfUpdateCommand::class,
             SicherungenCommand::class,
+            UmzugCommand::class,
         ]);
     }
 

@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": "לא ניתן היה למחוק :n מתוך :m גיבויים. האם לשרת האינטרנט חסרות הרשאות?",
     "Alle Sicherungen sind gelöscht.": "כל הגיבויים נמחקו.",
     "Die Sicherung ist gelöscht.": "הגיבוי נמחק.",
-    "Diese Sicherung liess sich nicht löschen.": "לא ניתן היה למחוק גיבוי זה."
+    "Diese Sicherung liess sich nicht löschen.": "לא ניתן היה למחוק גיבוי זה.",
+    "Neue interne Namen für :n Module": "שמות פנימיים חדשים ל־:n מודולים",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "להעביר עכשיו את כל :n המודולים לשמות הפנימיים החדשים?",
+    "Jetzt umziehen": "העבר עכשיו",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "המודולים שלנו נושאים מעתה בפנים את הקידומת «La», כדי שלעולם לא יתנגשו במודולים של ספקים אחרים. מה שאתם רואים נשאר אותו דבר: שמות, תפריטים, כתובות ונתונים. המודולים עוברים יחד, והגרסה הקודמת נשמרת שבוע כגיבוי.",
+    "Kein Umzug steht an.": "אין העברה ממתינה.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "לא הועבר, המצב הקודם לא השתנה: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "המודולים הועברו, אך לא כולם רשומים. נא להריץ בשרת: :befehle",
+    ":n Module sind umgezogen.": ":n מודולים הועברו.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "המודול הזה כבר מותקן כאן בשמו הקודם. נא לבחור למעלה «העבר עכשיו».",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "גרסה חדשה :v עם שם פנימי חדש. היא מגיעה עם ההעברה בראש הדף.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "בתור עדיין ממתינות משימות עבור :module. ההעברה תתבצע בהרצה הבאה.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "החנות לא מציעה חבילה :neu עבור :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "המודול הקודם אינו בתיקיית המודולים.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "כבר קיים מודול בשם :name. ההעברה לא מתבצעת."
 }

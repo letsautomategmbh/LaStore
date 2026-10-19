@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n از :m پشتیبان حذف نشد. آیا سرور وب دسترسی ندارد؟",
     "Alle Sicherungen sind gelöscht.": "همهٔ پشتیبان‌ها حذف شدند.",
     "Die Sicherung ist gelöscht.": "پشتیبان حذف شد.",
-    "Diese Sicherung liess sich nicht löschen.": "این پشتیبان حذف نشد."
+    "Diese Sicherung liess sich nicht löschen.": "این پشتیبان حذف نشد.",
+    "Neue interne Namen für :n Module": "نام‌های داخلی جدید برای :n ماژول",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "همهٔ :n ماژول اکنون به نام‌های داخلی جدید منتقل شوند؟",
+    "Jetzt umziehen": "اکنون منتقل کن",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "ماژول‌های ما اکنون در داخل پیشوند «La» دارند تا هرگز با ماژول‌های فروشندگان دیگر تداخل نکنند. آنچه می‌بینید همان می‌ماند: نام‌ها، منوها، نشانی‌ها و داده‌ها. ماژول‌ها با هم منتقل می‌شوند و نسخهٔ قبلی یک هفته به‌عنوان پشتیبان می‌ماند.",
+    "Kein Umzug steht an.": "انتقالی در انتظار نیست.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "منتقل نشد، وضعیت قبلی تغییری نکرده است: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "ماژول‌ها منتقل شدند، اما همه ثبت نشده‌اند. لطفاً روی سرور اجرا کنید: :befehle",
+    ":n Module sind umgezogen.": ":n ماژول منتقل شد.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "این ماژول از قبل با نام قبلی‌اش اینجا نصب است. لطفاً در بالا «اکنون منتقل کن» را انتخاب کنید.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "نسخهٔ جدید :v با نام داخلی جدید. همراه با انتقال در بالای این صفحه می‌آید.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "هنوز کارهایی برای :module در صف هست. انتقال در اجرای بعدی انجام می‌شود.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "فروشگاه بستهٔ :neu را برای :alt ارائه نمی‌دهد.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "ماژول قبلی در پوشهٔ ماژول‌ها نیست.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "ماژولی با نام :name از قبل وجود دارد. انتقال انجام نمی‌شود."
 }

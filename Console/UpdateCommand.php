@@ -8,6 +8,7 @@ use Modules\LaStore\Services\PackageInstaller;
 use Modules\LaStore\Services\StoreException;
 use Modules\LaStore\Support\InstalledModules;
 use Modules\LaStore\Support\ModulAnmeldung;
+use Modules\LaStore\Support\Umzug;
 
 /**
  * Module aktualisieren - mit Pruefung der Signatur.
@@ -35,6 +36,21 @@ class UpdateCommand extends Command
         $installer = new PackageInstaller();
         $alias = $this->argument('alias');
 
+        /*
+         * Zuerst umziehen, dann aktualisieren.
+         *
+         * Ein umbenanntes Modul (bexio -> labexio) bekommt unter seinem alten
+         * Kürzel vom Laden das Paket mit dem neuen. install() wiese es ab
+         * (alias_mismatch), und das zu Recht: es gehört an eine andere
+         * Stelle. Der Umzug holt es dorthin, und danach läuft die Schleife
+         * unten schon unter den neuen Kürzeln. Nicht bei --pruefen und nicht
+         * für ein einzelnes Modul: der Umzug geht nur alle zusammen.
+         */
+        if (!$alias && !$this->option('pruefen') && Umzug::anstehend()) {
+            $this->line('<options=bold>Umzug auf die neuen Modulnamen</>');
+            $this->call('lastore:umzug', $this->option('yes') ? array('--yes' => true) : array());
+        }
+
         $aliase = $alias
             ? array(strtolower($alias))
             : License::pluck('product_alias')->all();
@@ -59,6 +75,12 @@ class UpdateCommand extends Command
             } catch (StoreException $e) {
                 $this->error('  Der Shop antwortet nicht wie erwartet: '.$e->getMessage());
                 $fehler++;
+                continue;
+            }
+
+            // Ein Paket unter einem anderen Kürzel ist ein Umzug, kein Update.
+            if (isset($meldung['alias']) && strtolower((string) $meldung['alias']) !== strtolower($a)) {
+                $this->warn('  umbenannt in '.$meldung['alias'].' -- zieht mit lastore:umzug um, nicht hier');
                 continue;
             }
 

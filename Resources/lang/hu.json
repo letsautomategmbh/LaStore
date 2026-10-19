@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n / :m biztonsági mentést nem sikerült törölni. Hiányoznak a webszerver jogosultságai?",
     "Alle Sicherungen sind gelöscht.": "Minden biztonsági mentés törölve.",
     "Die Sicherung ist gelöscht.": "A biztonsági mentés törölve.",
-    "Diese Sicherung liess sich nicht löschen.": "Ezt a biztonsági mentést nem sikerült törölni."
+    "Diese Sicherung liess sich nicht löschen.": "Ezt a biztonsági mentést nem sikerült törölni.",
+    "Neue interne Namen für :n Module": "Új belső nevek :n modulhoz",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Áthelyezi most mind a(z) :n modult az új belső nevére?",
+    "Jetzt umziehen": "Áthelyezés most",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Moduljaink mostantól belsőleg a „La” előtagot viselik, hogy soha ne ütközzenek más szállítók moduljaival. Amit lát, az változatlan marad: nevek, menük, címek és adatok. A modulok együtt költöznek, az előző verzió pedig egy hétig biztonsági mentésként megmarad.",
+    "Kein Umzug steht an.": "Nincs függőben lévő áthelyezés.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Nem történt áthelyezés, az előző állapot változatlan: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "A modulok átköltöztek, de nem mind van regisztrálva. Futtassa a szerveren: :befehle",
+    ":n Module sind umgezogen.": "Áthelyezett modulok: :n.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Ez a modul itt már a korábbi nevén telepítve van. Válassza fent az „Áthelyezés most” lehetőséget.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Új verzió :v új belső névvel. Az oldal tetején lévő áthelyezéssel érkezik.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "A sorban még feladatok várnak ehhez: :module. Az áthelyezés a következő futáskor történik meg.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "A bolt nem kínál :neu csomagot ehhez: :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Az előző modul nincs a modulkönyvtárban.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": ":name néven már létezik modul. Az áthelyezés nem történik meg."
 }

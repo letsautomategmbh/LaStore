@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n z :m záloh sa nepodarilo zmazať. Chýbajú webovému serveru oprávnenia?",
     "Alle Sicherungen sind gelöscht.": "Všetky zálohy boli zmazané.",
     "Die Sicherung ist gelöscht.": "Záloha bola zmazaná.",
-    "Diese Sicherung liess sich nicht löschen.": "Túto zálohu sa nepodarilo zmazať."
+    "Diese Sicherung liess sich nicht löschen.": "Túto zálohu sa nepodarilo zmazať.",
+    "Neue interne Namen für :n Module": "Nové interné názvy pre :n modulov",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Presunúť teraz všetkých :n modulov na ich nové interné názvy?",
+    "Jetzt umziehen": "Presunúť teraz",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Naše moduly teraz interne nesú predponu „La“, aby sa nikdy nestretli s modulmi iných dodávateľov. To, čo vidíte, zostáva rovnaké: názvy, ponuky, adresy a údaje. Moduly sa presúvajú spoločne a predchádzajúca verzia zostane týždeň ako záloha.",
+    "Kein Umzug steht an.": "Žiadny presun nečaká.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Nepresunuté, predchádzajúci stav je bez zmeny: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "Moduly boli presunuté, ale nie všetky sú zaregistrované. Spustite na serveri: :befehle",
+    ":n Module sind umgezogen.": "Presunutých modulov: :n.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Tento modul je tu už nainštalovaný pod svojím skorším názvom. Zvoľte hore „Presunúť teraz“.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Nová verzia :v s novým interným názvom. Príde s presunom hore na tejto stránke.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "V rade stále čakajú úlohy pre :module. Presun prebehne pri ďalšom behu.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "Obchod neponúka žiadny balík :neu pre :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Predchádzajúci modul nie je v adresári modulov.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Pod názvom :name už modul existuje. Presun sa nevykoná."
 }

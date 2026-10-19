@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":m сақтық көшірменің :n жойылмады. Веб-серверде құқықтар жетіспей ме?",
     "Alle Sicherungen sind gelöscht.": "Барлық сақтық көшірмелер жойылды.",
     "Die Sicherung ist gelöscht.": "Сақтық көшірме жойылды.",
-    "Diese Sicherung liess sich nicht löschen.": "Бұл сақтық көшірмені жою мүмкін болмады."
+    "Diese Sicherung liess sich nicht löschen.": "Бұл сақтық көшірмені жою мүмкін болмады.",
+    "Neue interne Namen für :n Module": ":n модульге арналған жаңа ішкі атаулар",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Барлық :n модульді қазір жаңа ішкі атауларына көшіру керек пе?",
+    "Jetzt umziehen": "Қазір көшіру",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Біздің модульдер енді іште «La» префиксін алып жүреді, сонда олар басқа жеткізушілердің модульдерімен ешқашан қақтығыспайды. Сіз көретін нәрсе өзгермейді: атаулар, мәзірлер, мекенжайлар және деректер. Модульдер бірге көшеді, ал алдыңғы нұсқа бір апта сақтық көшірме ретінде қалады.",
+    "Kein Umzug steht an.": "Күтудегі көшіру жоқ.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Көшірілмеді, алдыңғы күй өзгерген жоқ: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "Модульдер көшірілді, бірақ барлығы тіркелмеген. Серверде орындаңыз: :befehle",
+    ":n Module sind umgezogen.": ":n модуль көшірілді.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Бұл модуль мұнда бұрынғы атауымен орнатылған. Жоғарыдан «Қазір көшіру» таңдаңыз.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Жаңа ішкі атауы бар жаңа нұсқа :v. Ол осы беттің жоғарғы жағындағы көшірумен бірге келеді.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Кезекте :module үшін әлі тапсырмалар бар. Көшіру келесі іске қосуда жасалады.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "Дүкен :alt үшін :neu бумасын ұсынбайды.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Алдыңғы модуль модульдер қалтасында жоқ.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": ":name атауымен модуль бар. Көшіру орындалмайды."
 }

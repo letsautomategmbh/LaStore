@@ -62,6 +62,29 @@
         </div>
     @endif
 
+    {{-- Der Umzug auf die neuen Modulnamen (Bexio -> LaBexio).
+
+         Ein Knopf für alle: die Module rufen sich gegenseitig über ihre
+         internen Namen auf, und darum ziehen sie zusammen um oder gar
+         nicht. Mit Autopilot geschieht es nachts von selbst
+         (lastore:update ruft lastore:umzug zuerst). Siehe Support\Umzug. --}}
+    @if (!empty($umzug))
+        <div class="alert alert-info">
+            <strong>{{ __('Neue interne Namen für :n Module', ['n' => count($umzug)]) }}</strong>
+            <form method="POST" action="{{ route('lastore.umzug') }}" class="form-inline" style="display:inline-block;margin-left:10px"
+                  data-lastore-bestaetigen="{{ __('Jetzt alle :n Module auf ihre neuen internen Namen umziehen?', ['n' => count($umzug)]) }}">
+                {{ csrf_field() }}
+                <button type="submit" class="btn btn-primary btn-sm">{{ __('Jetzt umziehen') }}</button>
+            </form>
+            <div class="text-muted" style="margin-top:6px;max-width:68em">
+                <small>
+                    {{ __('Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.') }}
+                </small>
+                <br><small>{{ implode(' · ', array_map(function ($k) { return $k['name'].' → '.$k['neu']; }, $umzug)) }}</small>
+            </div>
+        </div>
+    @endif
+
     {{-- Was der Shop beim letzten Heartbeat gesagt hat.
 
          Der wichtigste dieser Hinweise ist "12 Nutzer, lizenziert sind 5".

@@ -98,5 +98,19 @@
     ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n din :m copii nu au putut fi șterse. Îi lipsesc serverului web drepturile?",
     "Alle Sicherungen sind gelöscht.": "Toate copiile au fost șterse.",
     "Die Sicherung ist gelöscht.": "Copia a fost ștearsă.",
-    "Diese Sicherung liess sich nicht löschen.": "Această copie nu a putut fi ștearsă."
+    "Diese Sicherung liess sich nicht löschen.": "Această copie nu a putut fi ștearsă.",
+    "Neue interne Namen für :n Module": "Nume interne noi pentru :n module",
+    "Jetzt alle :n Module auf ihre neuen internen Namen umziehen?": "Mutați acum toate cele :n module la noile nume interne?",
+    "Jetzt umziehen": "Mută acum",
+    "Unsere Module tragen intern neu das Präfix «La», damit sie nie mit Modulen anderer Anbieter zusammenstossen. Was Sie sehen, bleibt gleich: Namen, Menüs, Adressen und Daten. Die Module ziehen gemeinsam um, und die bisherige Fassung bleibt eine Woche als Sicherung liegen.": "Modulele noastre poartă acum intern prefixul „La”, ca să nu intre niciodată în conflict cu module ale altor furnizori. Ce vedeți rămâne la fel: nume, meniuri, adrese și date. Modulele se mută împreună, iar versiunea anterioară rămâne o săptămână ca copie de siguranță.",
+    "Kein Umzug steht an.": "Nu există nicio mutare în așteptare.",
+    "Nicht umgezogen, der bisherige Stand ist unverändert: :fehler": "Nu s-a mutat, starea anterioară este neschimbată: :fehler",
+    "Die Module sind umgezogen, aber nicht alle angemeldet. Bitte auf dem Server ausführen: :befehle": "Modulele s-au mutat, dar nu toate sunt înregistrate. Rulați pe server: :befehle",
+    ":n Module sind umgezogen.": "Module mutate: :n.",
+    "Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.": "Acest modul este deja instalat aici sub numele anterior. Alegeți „Mută acum” sus.",
+    "Neue Fassung :v mit neuem internen Namen. Sie kommt mit dem Umzug oben auf dieser Seite.": "Versiune nouă :v cu un nume intern nou. Vine odată cu mutarea din partea de sus a paginii.",
+    "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "În coadă mai sunt sarcini pentru :module. Mutarea se face la următoarea rulare.",
+    "Der Laden bietet für :alt kein Paket :neu an.": "Magazinul nu oferă niciun pachet :neu pentru :alt.",
+    "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Modulul anterior nu se află în directorul de module.",
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Există deja un modul cu numele :name. Mutarea nu se efectuează."
 }
