@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Növbədə hələ :module üçün tapşırıqlar var. Köçürmə növbəti işə salınmada ediləcək.",
     "Der Laden bietet für :alt kein Paket :neu an.": "Mağaza :alt üçün :neu paketi təklif etmir.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Əvvəlki modul modullar qovluğunda deyil.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": ":name adı ilə artıq modul var. Köçürmə edilmir."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": ":name adı ilə artıq modul var. Köçürmə edilmir.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "Modullar köçürüldü. Qalan yeniləmələr növbəti işə salınmada gələcək: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Əvvəlcə köçürmə: bu səhifənin yuxarısında yeni daxili adlara köçürmə gözləyir. Sonra bütün modullar birdəfəlik yenilənir."
 }

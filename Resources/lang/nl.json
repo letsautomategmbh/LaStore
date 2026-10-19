@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Er wachten nog taken voor :module in de wachtrij. De verhuizing gebeurt bij de volgende run.",
     "Der Laden bietet für :alt kein Paket :neu an.": "De winkel biedt geen pakket :neu voor :alt aan.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "De vorige module staat niet in de modulemap.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Onder :name staat al een module. De verhuizing wordt niet uitgevoerd."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Onder :name staat al een module. De verhuizing wordt niet uitgevoerd.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "De modules zijn verhuisd. De overige updates komen bij de volgende run: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Eerst verhuizen: bovenaan deze pagina staat de verhuizing naar de nieuwe interne namen klaar. Daarna worden alle modules in één keer bijgewerkt."
 }

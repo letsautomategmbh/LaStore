@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "هنوز کارهایی برای :module در صف هست. انتقال در اجرای بعدی انجام می‌شود.",
     "Der Laden bietet für :alt kein Paket :neu an.": "فروشگاه بستهٔ :neu را برای :alt ارائه نمی‌دهد.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "ماژول قبلی در پوشهٔ ماژول‌ها نیست.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "ماژولی با نام :name از قبل وجود دارد. انتقال انجام نمی‌شود."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "ماژولی با نام :name از قبل وجود دارد. انتقال انجام نمی‌شود.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "ماژول‌ها منتقل شدند. به‌روزرسانی‌های باقی‌مانده در اجرای بعدی می‌آیند: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "اول انتقال: در بالای این صفحه انتقال به نام‌های داخلی جدید در انتظار است. پس از آن همهٔ ماژول‌ها یک‌جا به‌روز می‌شوند."
 }

@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Encara hi ha tasques de :module a la cua. El trasllat es farà a la propera execució.",
     "Der Laden bietet für :alt kein Paket :neu an.": "La botiga no ofereix cap paquet :neu per a :alt.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "El mòdul anterior no és al directori de mòduls.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Ja hi ha un mòdul amb el nom :name. No es fa el trasllat."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Ja hi ha un mòdul amb el nom :name. No es fa el trasllat.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "Els mòduls s'han traslladat. Les altres actualitzacions arriben a la propera execució: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Primer el trasllat: a dalt d'aquesta pàgina hi ha pendent el trasllat als noms interns nous. Després, tots els mòduls s'actualitzen d'una vegada."
 }

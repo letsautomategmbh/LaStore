@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "대기열에 아직 :module 작업이 있습니다. 이전은 다음 실행 때 진행됩니다.",
     "Der Laden bietet für :alt kein Paket :neu an.": "스토어에 :alt용 :neu 패키지가 없습니다.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "이전 모듈이 모듈 디렉터리에 없습니다.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": ":name 이름의 모듈이 이미 있습니다. 이전을 진행하지 않습니다."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": ":name 이름의 모듈이 이미 있습니다. 이전을 진행하지 않습니다.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "모듈을 옮겼습니다. 나머지 업데이트는 다음 실행 때 진행됩니다: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "먼저 옮기십시오: 이 페이지 위쪽에서 새 내부 이름으로의 이전이 대기 중입니다. 그 후 모든 모듈이 한 번에 업데이트됩니다."
 }

@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "בתור עדיין ממתינות משימות עבור :module. ההעברה תתבצע בהרצה הבאה.",
     "Der Laden bietet für :alt kein Paket :neu an.": "החנות לא מציעה חבילה :neu עבור :alt.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "המודול הקודם אינו בתיקיית המודולים.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "כבר קיים מודול בשם :name. ההעברה לא מתבצעת."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "כבר קיים מודול בשם :name. ההעברה לא מתבצעת.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "המודולים הועברו. שאר העדכונים יגיעו בהרצה הבאה: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "קודם להעביר: בראש הדף ממתינה ההעברה לשמות הפנימיים החדשים. אחר כך כל המודולים מתעדכנים בבת אחת."
 }

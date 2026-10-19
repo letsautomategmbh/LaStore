@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Jobs for :module are still waiting in the queue. The move will be done on the next run.",
     "Der Laden bietet für :alt kein Paket :neu an.": "The store offers no package :neu for :alt.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "The previous module is not in the modules directory.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "A module already exists under :name. The move is not carried out."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "A module already exists under :name. The move is not carried out.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "The modules have moved. The remaining updates come with the next run: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Move first: the move to the new internal names is pending at the top of this page. After that, all modules are updated in one go."
 }

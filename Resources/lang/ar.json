@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "لا تزال مهام لـ :module في قائمة الانتظار. سيتم النقل في التشغيل التالي.",
     "Der Laden bietet für :alt kein Paket :neu an.": "لا يقدم المتجر حزمة :neu لـ :alt.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "الوحدة السابقة ليست في مجلد الوحدات.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "توجد وحدة بالاسم :name بالفعل. لن يتم النقل."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "توجد وحدة بالاسم :name بالفعل. لن يتم النقل.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "نُقلت الوحدات. تأتي التحديثات المتبقية في التشغيل التالي: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "انقل أولًا: النقل إلى الأسماء الداخلية الجديدة معلّق أعلى هذه الصفحة. بعد ذلك تُحدَّث جميع الوحدات دفعة واحدة."
 }

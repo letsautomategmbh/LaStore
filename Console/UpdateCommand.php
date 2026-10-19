@@ -51,6 +51,15 @@ class UpdateCommand extends Command
             $this->call('lastore:umzug', $this->option('yes') ? array('--yes' => true) : array());
         }
 
+        // Steht er danach immer noch an (Warteschlange, Fehler, oder nur ein
+        // Modul verlangt), wird heute nichts aktualisiert: neue Fassungen
+        // zeigen auf die neuen Namen ihrer Nachbarn.
+        if (!$this->option('pruefen') && Umzug::anstehend()) {
+            $this->warn('Der Umzug auf die neuen Modulnamen steht noch an. Bis dahin werden keine Module aktualisiert.');
+
+            return $alias ? 1 : 0;
+        }
+
         $aliase = $alias
             ? array(strtolower($alias))
             : License::pluck('product_alias')->all();

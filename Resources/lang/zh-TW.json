@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "佇列中仍有 :module 的工作。遷移將在下次執行時進行。",
     "Der Laden bietet für :alt kein Paket :neu an.": "商店沒有為 :alt 提供 :neu 套件。",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "先前的模組不在模組目錄中。",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "名為 :name 的模組已存在。不執行遷移。"
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "名為 :name 的模組已存在。不執行遷移。",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "模組已遷移。其餘更新將在下次執行時進行：:fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "請先遷移：本頁頂部有待處理的新內部名稱遷移。之後所有模組會一次性更新。"
 }

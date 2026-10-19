@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Nella coda ci sono ancora lavori per :module. Il trasferimento verrà eseguito al prossimo passaggio.",
     "Der Laden bietet für :alt kein Paket :neu an.": "Lo store non offre alcun pacchetto :neu per :alt.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Il modulo precedente non si trova nella cartella dei moduli.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Esiste già un modulo con il nome :name. Il trasferimento non viene eseguito."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Esiste già un modulo con il nome :name. Il trasferimento non viene eseguito.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "I moduli sono stati trasferiti. Gli altri aggiornamenti arrivano al prossimo passaggio: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Prima il trasferimento: in cima a questa pagina è in attesa il trasferimento ai nuovi nomi interni. Dopo, tutti i moduli vengono aggiornati in una volta."
 }

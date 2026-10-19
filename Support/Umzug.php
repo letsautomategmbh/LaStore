@@ -95,6 +95,17 @@ class Umzug
     {
         $karte = array();
 
+        // Aus dem Laden, für alle Module -- auch die, die nicht im Katalog
+        // stehen (StoreClient::catalog()).
+        foreach ((array) \Option::get('lastore.umbenennungen', array()) as $alt => $neu) {
+            $alt = strtolower((string) $alt);
+            $neu = strtolower((string) $neu);
+
+            if ($alt !== '' && $neu !== '' && $alt !== $neu && preg_match('/^[a-z0-9]+$/', $alt.$neu)) {
+                $karte[$alt] = $neu;
+            }
+        }
+
         foreach (CatalogEntry::all() as $eintrag) {
             foreach ((array) $eintrag->value('ersetzt', array()) as $alt) {
                 $alt = strtolower((string) $alt);

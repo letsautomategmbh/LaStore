@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "V rade stále čakajú úlohy pre :module. Presun prebehne pri ďalšom behu.",
     "Der Laden bietet für :alt kein Paket :neu an.": "Obchod neponúka žiadny balík :neu pre :alt.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Predchádzajúci modul nie je v adresári modulov.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Pod názvom :name už modul existuje. Presun sa nevykoná."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Pod názvom :name už modul existuje. Presun sa nevykoná.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "Moduly boli presunuté. Ostatné aktualizácie prídu pri ďalšom behu: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Najprv presun: hore na tejto stránke čaká presun na nové interné názvy. Potom sa všetky moduly aktualizujú naraz."
 }

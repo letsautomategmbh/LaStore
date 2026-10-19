@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Кезекте :module үшін әлі тапсырмалар бар. Көшіру келесі іске қосуда жасалады.",
     "Der Laden bietet für :alt kein Paket :neu an.": "Дүкен :alt үшін :neu бумасын ұсынбайды.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Алдыңғы модуль модульдер қалтасында жоқ.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": ":name атауымен модуль бар. Көшіру орындалмайды."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": ":name атауымен модуль бар. Көшіру орындалмайды.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "Модульдер көшірілді. Қалған жаңартулар келесі іске қосуда келеді: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Алдымен көшіру: осы беттің жоғарғы жағында жаңа ішкі атауларға көшіру күтіп тұр. Содан кейін барлық модульдер бірден жаңартылады."
 }

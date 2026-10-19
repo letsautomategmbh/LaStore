@@ -103,6 +103,16 @@ class StoreClient
 
         $response = $this->transport->get('catalog');
 
+        /*
+         * Die Umbenennungen ALLER Module (alt => neu), auch derer, die nicht
+         * im Katalog stehen -- Assets etwa ist intern, liegt aber lizenziert
+         * hier. Abgelegt neben dem Katalog; Support\Umzug liest beides.
+         * Fehlt das Feld (älterer Laden), bleibt der letzte Stand.
+         */
+        if (isset($response['umbenennungen']) && is_array($response['umbenennungen'])) {
+            \Option::set('lastore.umbenennungen', $response['umbenennungen']);
+        }
+
         return isset($response['products']) ? $response['products'] : [];
     }
 

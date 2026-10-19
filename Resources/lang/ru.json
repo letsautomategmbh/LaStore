@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "В очереди ещё есть задания для :module. Перенос будет выполнен при следующем запуске.",
     "Der Laden bietet für :alt kein Paket :neu an.": "Магазин не предлагает пакет :neu для :alt.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Предыдущий модуль находится не в каталоге модулей.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Модуль с именем :name уже существует. Перенос не выполняется."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Модуль с именем :name уже существует. Перенос не выполняется.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "Модули перенесены. Остальные обновления придут при следующем запуске: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Сначала перенос: вверху этой страницы ожидает перенос на новые внутренние имена. После этого все модули обновятся разом."
 }

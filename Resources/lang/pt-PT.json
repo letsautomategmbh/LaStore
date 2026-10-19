@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Ainda há tarefas de :module na fila. A mudança será feita na próxima execução.",
     "Der Laden bietet für :alt kein Paket :neu an.": "A loja não oferece nenhum pacote :neu para :alt.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "O módulo anterior não está no diretório de módulos.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Já existe um módulo com o nome :name. A mudança não é feita."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Já existe um módulo com o nome :name. A mudança não é feita.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "Os módulos mudaram. As restantes atualizações chegam na próxima execução: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Primeiro a mudança: no topo desta página está pendente a mudança para os novos nomes internos. Depois, todos os módulos são atualizados de uma vez."
 }

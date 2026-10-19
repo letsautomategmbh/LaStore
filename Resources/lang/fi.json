@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Jonossa on vielä töitä moduulille :module. Siirto tehdään seuraavalla ajokerralla.",
     "Der Laden bietet für :alt kein Paket :neu an.": "Kauppa ei tarjoa pakettia :neu kohteelle :alt.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Edellinen moduuli ei ole moduulikansiossa.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Nimellä :name on jo moduuli. Siirtoa ei tehdä."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Nimellä :name on jo moduuli. Siirtoa ei tehdä.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "Moduulit on siirretty. Muut päivitykset tulevat seuraavalla ajokerralla: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Siirrä ensin: tämän sivun yläosassa odottaa siirto uusiin sisäisiin nimiin. Sen jälkeen kaikki moduulit päivitetään kerralla."
 }

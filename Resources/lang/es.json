@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Aún hay tareas de :module en la cola. El traslado se hará en la próxima ejecución.",
     "Der Laden bietet für :alt kein Paket :neu an.": "La tienda no ofrece ningún paquete :neu para :alt.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "El módulo anterior no está en el directorio de módulos.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Ya existe un módulo con el nombre :name. No se realiza el traslado."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Ya existe un módulo con el nombre :name. No se realiza el traslado.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "Los módulos se han trasladado. Las demás actualizaciones llegan en la próxima ejecución: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Primero el traslado: arriba en esta página está pendiente el traslado a los nuevos nombres internos. Después, todos los módulos se actualizan de una vez."
 }

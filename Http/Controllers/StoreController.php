@@ -125,6 +125,20 @@ class StoreController extends Controller
                 break;
 
             default:
+                /*
+                 * Gleich danach alle übrigen Module aktualisieren.
+                 *
+                 * Module, die nicht umbenannt wurden, aber auf umbenannte
+                 * zeigen (LaPortal auf `labexio.*`), müssen im selben Zug
+                 * nachziehen. Bis der Knopf gedrückt wurde, waren Einzel-
+                 * Updates gesperrt -- siehe install().
+                 */
+                try {
+                    \Artisan::call('lastore:update', array('--yes' => true));
+                } catch (\Throwable $e) {
+                    \Session::flash('flash_warning_floating', __('Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler', ['fehler' => $e->getMessage()]));
+                }
+
                 if ($ergebnis['offen']) {
                     $befehle = array();
 
@@ -355,6 +369,20 @@ class StoreController extends Controller
          * `Bexio`, und FreeScout lüde beide -- doppelte Strecken auf
          * denselben Tabellen.
          */
+        /*
+         * Solange ein Umzug ansteht, nichts einzeln installieren.
+         *
+         * Neue Fassungen zeigen schon auf die neuen Namen der Nachbarn
+         * (`route('labexio.…')`). Käme eine davon VOR dem Umzug, fände sie
+         * ihre Nachbarn nicht. Der Umzug aktualisiert danach alles in einem
+         * Zug.
+         */
+        if (Umzug::anstehend()) {
+            \Session::flash('flash_error_floating', __('Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.'));
+
+            return redirect()->back();
+        }
+
         foreach (Umzug::ersetzungen() as $alt => $neu) {
             if ($neu === $alias && \Module::findByAlias($alt)) {
                 \Session::flash('flash_error_floating', __('Dieses Modul ist hier schon unter seinem früheren Namen installiert. Bitte oben «Jetzt umziehen» wählen.'));

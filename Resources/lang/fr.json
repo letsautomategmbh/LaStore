@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "Des tâches pour :module attendent encore dans la file. La migration sera faite au prochain passage.",
     "Der Laden bietet für :alt kein Paket :neu an.": "La boutique ne propose pas de paquet :neu pour :alt.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Le module précédent ne se trouve pas dans le répertoire des modules.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Un module existe déjà sous :name. La migration n'est pas effectuée."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Un module existe déjà sous :name. La migration n'est pas effectuée.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "Les modules ont migré. Les autres mises à jour viendront au prochain passage : :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Migrez d'abord : la migration vers les nouveaux noms internes est en attente en haut de cette page. Ensuite, tous les modules sont mis à jour en une fois."
 }

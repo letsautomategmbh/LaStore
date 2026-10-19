@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "U redu još čekaju zadaci za :module. Premještanje će se obaviti pri sljedećem pokretanju.",
     "Der Laden bietet für :alt kein Paket :neu an.": "Trgovina ne nudi paket :neu za :alt.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Prethodni modul nije u direktoriju modula.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Pod imenom :name već postoji modul. Premještanje se ne provodi."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Pod imenom :name već postoji modul. Premještanje se ne provodi.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "Moduli su premješteni. Ostala ažuriranja stižu pri sljedećem pokretanju: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Najprije premještanje: na vrhu ove stranice čeka premještanje na nova interna imena. Nakon toga svi se moduli ažuriraju odjednom."
 }

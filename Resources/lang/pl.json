@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "W kolejce wciąż czekają zadania dla :module. Przeniesienie nastąpi przy następnym przebiegu.",
     "Der Laden bietet für :alt kein Paket :neu an.": "Sklep nie oferuje pakietu :neu dla :alt.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Poprzedni moduł nie znajduje się w katalogu modułów.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Pod nazwą :name istnieje już moduł. Przeniesienie nie zostanie wykonane."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": "Pod nazwą :name istnieje już moduł. Przeniesienie nie zostanie wykonane.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "Moduły zostały przeniesione. Pozostałe aktualizacje nastąpią przy następnym przebiegu: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Najpierw przeniesienie: u góry tej strony czeka przeniesienie na nowe nazwy wewnętrzne. Potem wszystkie moduły zostaną zaktualizowane naraz."
 }

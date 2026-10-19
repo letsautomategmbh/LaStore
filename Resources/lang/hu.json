@@ -112,5 +112,7 @@
     "In der Warteschlange liegen noch Aufträge für :module. Der Umzug wird beim nächsten Lauf nachgeholt.": "A sorban még feladatok várnak ehhez: :module. Az áthelyezés a következő futáskor történik meg.",
     "Der Laden bietet für :alt kein Paket :neu an.": "A bolt nem kínál :neu csomagot ehhez: :alt.",
     "Das bisherige Modul liegt nicht im Modulverzeichnis.": "Az előző modul nincs a modulkönyvtárban.",
-    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": ":name néven már létezik modul. Az áthelyezés nem történik meg."
+    "Unter :name liegt schon ein Modul. Der Umzug wird nicht ausgeführt.": ":name néven már létezik modul. Az áthelyezés nem történik meg.",
+    "Die Module sind umgezogen. Die übrigen Updates holt der nächste Lauf: :fehler": "A modulok átköltöztek. A többi frissítés a következő futáskor érkezik: :fehler",
+    "Zuerst umziehen: Oben auf dieser Seite steht der Umzug auf die neuen internen Namen an. Danach werden alle Module in einem Zug aktualisiert.": "Előbb az áthelyezés: az oldal tetején vár az új belső nevekre való áthelyezés. Utána minden modul egyszerre frissül."
 }
