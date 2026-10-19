@@ -8,6 +8,7 @@ use Modules\LaStore\Console\AdoptCommand;
 use Modules\LaStore\Console\ResetInstallationCommand;
 use Modules\LaStore\Console\UpdateCommand;
 use Modules\LaStore\Console\SelfUpdateCommand;
+use Modules\LaStore\Console\SicherungenCommand;
 use Modules\LaStore\Console\SyncCommand;
 use Modules\LaStore\Entities\CatalogEntry;
 use Modules\LaStore\Support\InstalledModules;
@@ -78,6 +79,7 @@ class LaStoreServiceProvider extends ServiceProvider
             AdoptCommand::class,
             UpdateCommand::class,
             SelfUpdateCommand::class,
+            SicherungenCommand::class,
         ]);
     }
 
@@ -138,6 +140,15 @@ class LaStoreServiceProvider extends ServiceProvider
              */
             $schedule->command('lastore:self-update --pruefen')
                 ->dailyAt('05:20')->withoutOverlapping();
+
+            /*
+             * Sicherungen alter Fassungen wegraeumen, auch ohne Autopilot:
+             * liegen bleiben sie nach JEDEM Update, auch einem von Hand.
+             * Um 04:10, nach beiden Aktualisierungslaeufen -- so ist die
+             * Sicherung der Nacht schon da und zaehlt als die neueste.
+             */
+            $schedule->command('lastore:sicherungen --aufraeumen')
+                ->dailyAt('04:10')->withoutOverlapping();
 
             return $schedule;
         });

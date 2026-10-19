@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "Ei tallennettua vastausta: :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "Tallennettu vastaus :file ei ole kelvollista JSONia.",
     "Unbekannter Fehler": "Tuntematon virhe",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "Kauppa lähetti lukukelvottoman vastauksen."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "Kauppa lähetti lukukelvottoman vastauksen.",
+    "Sicherungen alter Fassungen": "Aiempien versioiden varmuuskopiot",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "Jokaisen päivityksen yhteydessä LaStore siirtää edellisen version syrjään, jotta paluu on mahdollinen. Moduulia kohden säilytetään yksi, ja se poistetaan automaattisesti 7 päivän kuluttua.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Poistetaanko tämä varmuuskopio? Paluu edelliseen versioon onnistuu sen jälkeen vain kaupan kautta.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Poistetaanko kaikki varmuuskopiot? Paluu edelliseen versioon onnistuu sen jälkeen vain kaupan kautta.",
+    "Löschen": "Poista",
+    "Alle löschen": "Poista kaikki",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n / :m varmuuskopiota ei voitu poistaa. Puuttuuko verkkopalvelimelta oikeuksia?",
+    "Alle Sicherungen sind gelöscht.": "Kaikki varmuuskopiot on poistettu.",
+    "Die Sicherung ist gelöscht.": "Varmuuskopio on poistettu.",
+    "Diese Sicherung liess sich nicht löschen.": "Tätä varmuuskopiota ei voitu poistaa."
 }

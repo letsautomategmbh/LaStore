@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "Žiadna uložená odpoveď pre :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "Uložená odpoveď :file nie je platný JSON.",
     "Unbekannter Fehler": "Neznáma chyba",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "Obchod poslal nečitateľnú odpoveď."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "Obchod poslal nečitateľnú odpoveď.",
+    "Sicherungen alter Fassungen": "Zálohy predchádzajúcich verzií",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "Pri každej aktualizácii LaStore odloží predchádzajúcu verziu, aby existovala cesta späť. Pre každý modul sa uchováva jedna a po 7 dňoch sa automaticky zmaže.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Zmazať túto zálohu? Návrat k predchádzajúcej verzii bude potom možný len cez obchod.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Zmazať všetky zálohy? Návrat k predchádzajúcej verzii bude potom možný len cez obchod.",
+    "Löschen": "Zmazať",
+    "Alle löschen": "Zmazať všetky",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n z :m záloh sa nepodarilo zmazať. Chýbajú webovému serveru oprávnenia?",
+    "Alle Sicherungen sind gelöscht.": "Všetky zálohy boli zmazané.",
+    "Die Sicherung ist gelöscht.": "Záloha bola zmazaná.",
+    "Diese Sicherung liess sich nicht löschen.": "Túto zálohu sa nepodarilo zmazať."
 }

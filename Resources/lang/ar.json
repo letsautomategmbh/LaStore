@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "لا يوجد رد محفوظ لـ :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "الرد المحفوظ :file ليس JSON صالحاً.",
     "Unbekannter Fehler": "خطأ غير معروف",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "أرسل المتجر رداً غير مقروء."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "أرسل المتجر رداً غير مقروء.",
+    "Sicherungen alter Fassungen": "نسخ احتياطية للإصدارات السابقة",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "مع كل تحديث يضع LaStore الإصدار السابق جانبًا حتى يكون هناك طريق للعودة. تُحفظ نسخة واحدة لكل وحدة، وتُحذف تلقائيًا بعد 7 أيام.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "حذف هذه النسخة الاحتياطية؟ لن تكون العودة إلى الإصدار السابق ممكنة بعد ذلك إلا عبر المتجر.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "حذف جميع النسخ الاحتياطية؟ لن تكون العودة إلى الإصدار السابق ممكنة بعد ذلك إلا عبر المتجر.",
+    "Löschen": "حذف",
+    "Alle löschen": "حذف الكل",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": "تعذّر حذف :n من :m نسخ احتياطية. هل تنقص خادم الويب الصلاحيات؟",
+    "Alle Sicherungen sind gelöscht.": "تم حذف جميع النسخ الاحتياطية.",
+    "Die Sicherung ist gelöscht.": "تم حذف النسخة الاحتياطية.",
+    "Diese Sicherung liess sich nicht löschen.": "تعذّر حذف هذه النسخة الاحتياطية."
 }

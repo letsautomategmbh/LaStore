@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "Nessuna risposta salvata per :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "La risposta salvata :file non è un JSON valido.",
     "Unbekannter Fehler": "Errore sconosciuto",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "Il negozio ha inviato una risposta illeggibile."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "Il negozio ha inviato una risposta illeggibile.",
+    "Sicherungen alter Fassungen": "Backup delle versioni precedenti",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "A ogni aggiornamento LaStore mette da parte la versione precedente, così da poter tornare indietro. Ne viene conservato uno per modulo, che viene eliminato automaticamente dopo 7 giorni.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Eliminare questo backup? Tornare alla versione precedente sarà poi possibile solo tramite lo store.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Eliminare tutti i backup? Tornare alla versione precedente sarà poi possibile solo tramite lo store.",
+    "Löschen": "Elimina",
+    "Alle löschen": "Elimina tutti",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n di :m backup non sono stati eliminati. Al server web mancano i permessi?",
+    "Alle Sicherungen sind gelöscht.": "Tutti i backup sono stati eliminati.",
+    "Die Sicherung ist gelöscht.": "Il backup è stato eliminato.",
+    "Diese Sicherung liess sich nicht löschen.": "Non è stato possibile eliminare questo backup."
 }

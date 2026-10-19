@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "No stored response for :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "The stored response :file is not valid JSON.",
     "Unbekannter Fehler": "Unknown error",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "The store sent an unreadable response."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "The store sent an unreadable response.",
+    "Sicherungen alter Fassungen": "Backups of previous versions",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "With every update LaStore sets the previous version aside so there is a way back. One is kept per module, and it is deleted automatically after 7 days.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Delete this backup? Going back to the previous version is then only possible via the store.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Delete all backups? Going back to the previous version is then only possible via the store.",
+    "Löschen": "Delete",
+    "Alle löschen": "Delete all",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n of :m backups could not be deleted. Does the web server lack permission?",
+    "Alle Sicherungen sind gelöscht.": "All backups have been deleted.",
+    "Die Sicherung ist gelöscht.": "The backup has been deleted.",
+    "Diese Sicherung liess sich nicht löschen.": "This backup could not be deleted."
 }

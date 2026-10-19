@@ -175,6 +175,49 @@
             @endforeach
         </div>
 
+        {{-- Sicherungen alter Fassungen. Zugeklappt und nur, wenn welche
+             liegen: es ist Hausputz, keine Aufgabe. Die Regel (eine je Modul,
+             höchstens 7 Tage) räumt nachts von selbst; hier ist der Weg für
+             den, der den Platz sofort will. Siehe Support\Sicherungen. --}}
+        @if (!empty($sicherungen))
+            @php $sicherungenSumme = array_sum(array_column($sicherungen, 'bytes')); @endphp
+            <details class="lastore-sicherungen" style="margin:6px 0 16px">
+                <summary class="text-muted" style="cursor:pointer">
+                    {{ __('Sicherungen alter Fassungen') }}: {{ count($sicherungen) }} · {{ number_format($sicherungenSumme / 1048576, 1) }} MB
+                </summary>
+                <p class="text-help" style="margin:8px 0">
+                    {{ __('Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.') }}
+                </p>
+                <table class="table table-condensed" style="max-width:640px;margin-bottom:8px">
+                    <tbody>
+                        @foreach ($sicherungen as $sicherung)
+                            <tr>
+                                <td>{{ $sicherung['modul'] }}</td>
+                                <td class="text-muted">{{ \App\User::dateFormat(\Carbon\Carbon::createFromTimestamp($sicherung['zeit']), 'M j, H:i') }}</td>
+                                <td class="text-muted">{{ number_format($sicherung['bytes'] / 1048576, 1) }} MB</td>
+                                <td class="text-right">
+                                    <form method="POST" action="{{ route('lastore.sicherungen') }}" style="display:inline"
+                                          data-lastore-bestaetigen="{{ __('Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.') }}">
+                                        {{ csrf_field() }}
+                                        <input type="hidden" name="ordner" value="{{ $sicherung['ordner'] }}">
+                                        <button type="submit" class="btn btn-link btn-xs">{{ __('Löschen') }}</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        @endforeach
+                    </tbody>
+                </table>
+                @if (count($sicherungen) > 1)
+                    <form method="POST" action="{{ route('lastore.sicherungen') }}"
+                          data-lastore-bestaetigen="{{ __('Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.') }}">
+                        {{ csrf_field() }}
+                        <input type="hidden" name="alle" value="1">
+                        <button type="submit" class="btn btn-default btn-sm">{{ __('Alle löschen') }}</button>
+                    </form>
+                @endif
+            </details>
+        @endif
+
         {{-- Hier stand die Warnung "N Module tragen noch Zugangsdaten in
              ihrer module.json". Sie sagte die Wahrheit, aber sie stand am
              falschen Ort: ändern kann das nur, wer die Module baut, nicht
@@ -320,4 +363,16 @@
                 </div>
             </div>
         </div>
+
+        {{-- Rückfrage vor dem Löschen einer Sicherung. Als Skript mit Nonce,
+             weil FreeScouts CSP onsubmit im Attribut still verwirft -- das
+             Formular ginge dann ohne Rückfrage durch, und niemand merkte es. --}}
+        <script {!! \Helper::cspNonceAttr() !!}>
+            document.addEventListener('submit', function (e) {
+                var frage = e.target.getAttribute && e.target.getAttribute('data-lastore-bestaetigen');
+                if (frage && !window.confirm(frage)) {
+                    e.preventDefault();
+                }
+            });
+        </script>
 @endsection

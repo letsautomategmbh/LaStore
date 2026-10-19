@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "Немає збереженої відповіді для :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "Збережена відповідь :file не є коректним JSON.",
     "Unbekannter Fehler": "Невідома помилка",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "Магазин надіслав нечитабельну відповідь."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "Магазин надіслав нечитабельну відповідь.",
+    "Sicherungen alter Fassungen": "Резервні копії попередніх версій",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "Під час кожного оновлення LaStore відкладає попередню версію, щоб був шлях назад. Для кожного модуля зберігається одна копія, яка автоматично видаляється через 7 днів.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Видалити цю резервну копію? Повернутися до попередньої версії після цього можна буде лише через магазин.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Видалити всі резервні копії? Повернутися до попередньої версії після цього можна буде лише через магазин.",
+    "Löschen": "Видалити",
+    "Alle löschen": "Видалити всі",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": "Не вдалося видалити :n з :m резервних копій. Чи бракує прав веб-серверу?",
+    "Alle Sicherungen sind gelöscht.": "Усі резервні копії видалено.",
+    "Die Sicherung ist gelöscht.": "Резервну копію видалено.",
+    "Diese Sicherung liess sich nicht löschen.": "Не вдалося видалити цю резервну копію."
 }

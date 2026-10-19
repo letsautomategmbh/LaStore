@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": ":file için kayıtlı yanıt yok.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "Kayıtlı yanıt :file geçerli bir JSON değil.",
     "Unbekannter Fehler": "Bilinmeyen hata",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "Mağaza okunamayan bir yanıt gönderdi."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "Mağaza okunamayan bir yanıt gönderdi.",
+    "Sicherungen alter Fassungen": "Önceki sürümlerin yedekleri",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "LaStore her güncellemede önceki sürümü kenara koyar, böylece geri dönüş yolu olur. Modül başına bir tane tutulur ve 7 gün sonra otomatik olarak silinir.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Bu yedek silinsin mi? Önceki sürüme dönmek bundan sonra yalnızca mağaza üzerinden mümkün olur.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Tüm yedekler silinsin mi? Önceki sürüme dönmek bundan sonra yalnızca mağaza üzerinden mümkün olur.",
+    "Löschen": "Sil",
+    "Alle löschen": "Tümünü sil",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":m yedekten :n tanesi silinemedi. Web sunucusunun izinleri eksik mi?",
+    "Alle Sicherungen sind gelöscht.": "Tüm yedekler silindi.",
+    "Die Sicherung ist gelöscht.": "Yedek silindi.",
+    "Diese Sicherung liess sich nicht löschen.": "Bu yedek silinemedi."
 }

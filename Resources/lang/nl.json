@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "Geen opgeslagen antwoord voor :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "Het opgeslagen antwoord :file is geen geldige JSON.",
     "Unbekannter Fehler": "Onbekende fout",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "De winkel heeft een onleesbaar antwoord gestuurd."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "De winkel heeft een onleesbaar antwoord gestuurd.",
+    "Sicherungen alter Fassungen": "Back-ups van eerdere versies",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "Bij elke update zet LaStore de vorige versie apart, zodat er een weg terug is. Per module blijft er één bewaard, die na 7 dagen automatisch wordt verwijderd.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Deze back-up verwijderen? Terug naar de vorige versie kan daarna alleen nog via de winkel.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Alle back-ups verwijderen? Terug naar de vorige versie kan daarna alleen nog via de winkel.",
+    "Löschen": "Verwijderen",
+    "Alle löschen": "Alles verwijderen",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n van :m back-ups konden niet worden verwijderd. Heeft de webserver geen rechten?",
+    "Alle Sicherungen sind gelöscht.": "Alle back-ups zijn verwijderd.",
+    "Die Sicherung ist gelöscht.": "De back-up is verwijderd.",
+    "Diese Sicherung liess sich nicht löschen.": "Deze back-up kon niet worden verwijderd."
 }

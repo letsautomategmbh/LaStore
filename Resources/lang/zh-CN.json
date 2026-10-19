@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "没有 :file 的已保存响应。",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "已保存的响应 :file 不是有效的 JSON。",
     "Unbekannter Fehler": "未知错误",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "商店发送了无法读取的响应。"
+    "Der Shop hat eine unlesbare Antwort geschickt.": "商店发送了无法读取的响应。",
+    "Sicherungen alter Fassungen": "旧版本备份",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "每次更新时，LaStore 都会把上一个版本放到一边，以便可以回退。每个模块保留一个，7 天后自动删除。",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "删除此备份？之后只能通过商店回退到上一个版本。",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "删除所有备份？之后只能通过商店回退到上一个版本。",
+    "Löschen": "删除",
+    "Alle löschen": "全部删除",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":m 个备份中有 :n 个无法删除。是否 Web 服务器缺少权限？",
+    "Alle Sicherungen sind gelöscht.": "所有备份已删除。",
+    "Die Sicherung ist gelöscht.": "备份已删除。",
+    "Diese Sicherung liess sich nicht löschen.": "无法删除此备份。"
 }

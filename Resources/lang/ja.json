@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": ":file の保存済み応答がありません。",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "保存済み応答 :file は有効な JSON ではありません。",
     "Unbekannter Fehler": "不明なエラー",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "ストアから読み取れない応答が届きました。"
+    "Der Shop hat eine unlesbare Antwort geschickt.": "ストアから読み取れない応答が届きました。",
+    "Sicherungen alter Fassungen": "以前のバージョンのバックアップ",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "LaStore は更新のたびに以前のバージョンを退避し、元に戻せるようにします。モジュールごとに 1 つだけ保持され、7 日後に自動的に削除されます。",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "このバックアップを削除しますか？以前のバージョンに戻すには、その後はストア経由でのみ可能です。",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "すべてのバックアップを削除しますか？以前のバージョンに戻すには、その後はストア経由でのみ可能です。",
+    "Löschen": "削除",
+    "Alle löschen": "すべて削除",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":m 件中 :n 件のバックアップを削除できませんでした。Web サーバーの権限が不足していませんか？",
+    "Alle Sicherungen sind gelöscht.": "すべてのバックアップを削除しました。",
+    "Die Sicherung ist gelöscht.": "バックアップを削除しました。",
+    "Diese Sicherung liess sich nicht löschen.": "このバックアップを削除できませんでした。"
 }

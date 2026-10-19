@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "Niciun răspuns salvat pentru :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "Răspunsul salvat :file nu este JSON valid.",
     "Unbekannter Fehler": "Eroare necunoscută",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "Magazinul a trimis un răspuns ilizibil."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "Magazinul a trimis un răspuns ilizibil.",
+    "Sicherungen alter Fassungen": "Copii de siguranță ale versiunilor anterioare",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "La fiecare actualizare, LaStore pune deoparte versiunea anterioară, ca să existe o cale de întoarcere. Se păstrează una pe modul, ștearsă automat după 7 zile.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Ștergeți această copie? Revenirea la versiunea anterioară va fi apoi posibilă doar prin magazin.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Ștergeți toate copiile? Revenirea la versiunea anterioară va fi apoi posibilă doar prin magazin.",
+    "Löschen": "Ștergere",
+    "Alle löschen": "Ștergeți tot",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n din :m copii nu au putut fi șterse. Îi lipsesc serverului web drepturile?",
+    "Alle Sicherungen sind gelöscht.": "Toate copiile au fost șterse.",
+    "Die Sicherung ist gelöscht.": "Copia a fost ștearsă.",
+    "Diese Sicherung liess sich nicht löschen.": "Această copie nu a putut fi ștearsă."
 }

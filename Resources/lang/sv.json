@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "Inget sparat svar för :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "Det sparade svaret :file är inte giltig JSON.",
     "Unbekannter Fehler": "Okänt fel",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "Butiken skickade ett oläsbart svar."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "Butiken skickade ett oläsbart svar.",
+    "Sicherungen alter Fassungen": "Säkerhetskopior av tidigare versioner",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "Vid varje uppdatering lägger LaStore undan den föregående versionen så att det finns en väg tillbaka. En behålls per modul, och den raderas automatiskt efter 7 dagar.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Radera denna säkerhetskopia? Tillbaka till föregående version går då bara via butiken.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Radera alla säkerhetskopior? Tillbaka till föregående version går då bara via butiken.",
+    "Löschen": "Radera",
+    "Alle löschen": "Radera alla",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n av :m säkerhetskopior kunde inte raderas. Saknar webbservern behörighet?",
+    "Alle Sicherungen sind gelöscht.": "Alla säkerhetskopior är raderade.",
+    "Die Sicherung ist gelöscht.": "Säkerhetskopian är raderad.",
+    "Diese Sicherung liess sich nicht löschen.": "Denna säkerhetskopia kunde inte raderas."
 }

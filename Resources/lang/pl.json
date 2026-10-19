@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "Brak zapisanej odpowiedzi dla :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "Zapisana odpowiedź :file nie jest prawidłowym JSON.",
     "Unbekannter Fehler": "Nieznany błąd",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "Sklep przysłał nieczytelną odpowiedź."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "Sklep przysłał nieczytelną odpowiedź.",
+    "Sicherungen alter Fassungen": "Kopie zapasowe poprzednich wersji",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "Przy każdej aktualizacji LaStore odkłada poprzednią wersję, aby można było wrócić. Dla każdego modułu zachowywana jest jedna kopia, usuwana automatycznie po 7 dniach.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Usunąć tę kopię? Powrót do poprzedniej wersji będzie wtedy możliwy tylko przez sklep.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Usunąć wszystkie kopie? Powrót do poprzedniej wersji będzie wtedy możliwy tylko przez sklep.",
+    "Löschen": "Usuń",
+    "Alle löschen": "Usuń wszystkie",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": "Nie udało się usunąć :n z :m kopii. Czy serwerowi WWW brakuje uprawnień?",
+    "Alle Sicherungen sind gelöscht.": "Wszystkie kopie zostały usunięte.",
+    "Die Sicherung ist gelöscht.": "Kopia została usunięta.",
+    "Diese Sicherung liess sich nicht löschen.": "Nie udało się usunąć tej kopii."
 }

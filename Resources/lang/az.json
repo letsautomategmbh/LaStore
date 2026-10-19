@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": ":file üçün saxlanılmış cavab yoxdur.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "Saxlanılmış :file cavabı etibarlı JSON deyil.",
     "Unbekannter Fehler": "Naməlum xəta",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "Mağaza oxunmaz cavab göndərdi."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "Mağaza oxunmaz cavab göndərdi.",
+    "Sicherungen alter Fassungen": "Əvvəlki versiyaların ehtiyat nüsxələri",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "LaStore hər yeniləmədə əvvəlki versiyanı kənara qoyur ki, geri dönüş yolu olsun. Hər modul üçün biri saxlanılır və 7 gündən sonra avtomatik silinir.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Bu ehtiyat nüsxə silinsin? Əvvəlki versiyaya qayıtmaq bundan sonra yalnız mağaza vasitəsilə mümkün olacaq.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Bütün ehtiyat nüsxələr silinsin? Əvvəlki versiyaya qayıtmaq bundan sonra yalnız mağaza vasitəsilə mümkün olacaq.",
+    "Löschen": "Sil",
+    "Alle löschen": "Hamısını sil",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":m ehtiyat nüsxədən :n silinə bilmədi. Veb serverin icazələri çatışmır?",
+    "Alle Sicherungen sind gelöscht.": "Bütün ehtiyat nüsxələr silindi.",
+    "Die Sicherung ist gelöscht.": "Ehtiyat nüsxə silindi.",
+    "Diese Sicherung liess sich nicht löschen.": "Bu ehtiyat nüsxə silinə bilmədi."
 }

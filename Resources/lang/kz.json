@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": ":file үшін сақталған жауап жоқ.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "Сақталған :file жауабы жарамды JSON емес.",
     "Unbekannter Fehler": "Белгісіз қате",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "Дүкен оқылмайтын жауап жіберді."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "Дүкен оқылмайтын жауап жіберді.",
+    "Sicherungen alter Fassungen": "Алдыңғы нұсқалардың сақтық көшірмелері",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "LaStore әр жаңартуда алдыңғы нұсқаны кері қайту жолы болуы үшін бөлек сақтайды. Әр модульге біреуі қалады және 7 күннен кейін автоматты түрде жойылады.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Осы сақтық көшірмені жою керек пе? Алдыңғы нұсқаға қайту бұдан кейін тек дүкен арқылы мүмкін болады.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Барлық сақтық көшірмелерді жою керек пе? Алдыңғы нұсқаға қайту бұдан кейін тек дүкен арқылы мүмкін болады.",
+    "Löschen": "Жою",
+    "Alle löschen": "Барлығын жою",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":m сақтық көшірменің :n жойылмады. Веб-серверде құқықтар жетіспей ме?",
+    "Alle Sicherungen sind gelöscht.": "Барлық сақтық көшірмелер жойылды.",
+    "Die Sicherung ist gelöscht.": "Сақтық көшірме жойылды.",
+    "Diese Sicherung liess sich nicht löschen.": "Бұл сақтық көшірмені жою мүмкін болмады."
 }

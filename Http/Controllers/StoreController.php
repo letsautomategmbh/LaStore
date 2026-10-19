@@ -15,6 +15,7 @@ use Modules\LaStore\Support\Hinweise;
 use Modules\LaStore\Support\InstalledModules;
 use Modules\LaStore\Support\ModulAnmeldung;
 use Modules\LaStore\Support\SelfUpdater;
+use Modules\LaStore\Support\Sicherungen;
 
 class StoreController extends Controller
 {
@@ -95,7 +96,60 @@ class StoreController extends Controller
             'hinweise'     => Hinweise::offen(),
             'selbstNeu'    => SelfUpdater::hinterlegt(),
             'selbstNotiz'  => SelfUpdater::hinterlegteNotiz(),
+            'sicherungen'  => $this->sicherungenMitGroesse(),
         ]);
+    }
+
+    /**
+     * Sicherungen alter Fassungen loeschen: eine, oder alle.
+     *
+     * Der Ordnername aus dem Formular wird nicht als Pfad benutzt, sondern
+     * unter den gefundenen Sicherungen gesucht -- siehe Sicherungen::loeschen().
+     */
+    public function sicherungen(Request $request)
+    {
+        $this->authorizeAdmin();
+
+        if ($request->input('alle')) {
+            $vorher = count(Sicherungen::alle());
+            $weg = Sicherungen::alleLoeschen();
+
+            if (count($weg) < $vorher) {
+                \Session::flash('flash_error_floating', __(':n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?', ['n' => $vorher - count($weg), 'm' => $vorher]));
+            } else {
+                \Session::flash('flash_success_floating', __('Alle Sicherungen sind gelöscht.'));
+            }
+
+            return redirect()->back();
+        }
+
+        if (Sicherungen::loeschen((string) $request->input('ordner'))) {
+            \Session::flash('flash_success_floating', __('Die Sicherung ist gelöscht.'));
+        } else {
+            \Session::flash('flash_error_floating', __('Diese Sicherung liess sich nicht löschen.'));
+        }
+
+        return redirect()->back();
+    }
+
+    /**
+     * Fuer die Ansicht: jede Sicherung samt Groesse.
+     *
+     * Die Groesse kostet einen Gang durch den Ordner. Bei einer Sicherung je
+     * Modul sind das hoechstens zwei Dutzend, und diese Seite sieht nur der
+     * Verwalter -- vertretbar, ohne Zwischenspeicher.
+     *
+     * @return array
+     */
+    protected function sicherungenMitGroesse()
+    {
+        $liste = Sicherungen::alle();
+
+        foreach ($liste as $i => $sicherung) {
+            $liste[$i]['bytes'] = Sicherungen::groesse($sicherung['pfad']);
+        }
+
+        return $liste;
     }
 
     /**

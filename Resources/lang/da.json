@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "Intet gemt svar for :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "Det gemte svar :file er ikke gyldig JSON.",
     "Unbekannter Fehler": "Ukendt fejl",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "Butikken sendte et ulæseligt svar."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "Butikken sendte et ulæseligt svar.",
+    "Sicherungen alter Fassungen": "Sikkerhedskopier af tidligere versioner",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "Ved hver opdatering lægger LaStore den forrige version til side, så der er en vej tilbage. Der gemmes én pr. modul, og den slettes automatisk efter 7 dage.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Slet denne sikkerhedskopi? Tilbage til den forrige version kan derefter kun ske via butikken.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Slet alle sikkerhedskopier? Tilbage til den forrige version kan derefter kun ske via butikken.",
+    "Löschen": "Slet",
+    "Alle löschen": "Slet alle",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n af :m sikkerhedskopier kunne ikke slettes. Mangler webserveren rettigheder?",
+    "Alle Sicherungen sind gelöscht.": "Alle sikkerhedskopier er slettet.",
+    "Die Sicherung ist gelöscht.": "Sikkerhedskopien er slettet.",
+    "Diese Sicherung liess sich nicht löschen.": "Denne sikkerhedskopi kunne ikke slettes."
 }

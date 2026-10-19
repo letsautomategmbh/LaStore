@@ -3,6 +3,7 @@
 namespace Modules\LaStore\Services;
 
 use Modules\LaStore\Support\PackageVerifier;
+use Modules\LaStore\Support\Sicherungen;
 use Modules\LaStore\Support\Text;
 
 /**
@@ -34,16 +35,16 @@ class PackageInstaller
     /**
      * Wieviele beiseitegelegte Staende je Modul stehen bleiben.
      *
-     * Fuenf, nicht einer: wer nach einem Update etwas vermisst, merkt es
-     * nicht immer am selben Tag, und der naechtliche Autopilot schiebt
-     * inzwischen weitere Fassungen nach. Fuenf reichen ueber ein Wochenende
-     * hinweg und kosten bei einem Modul von zwei Megabyte zehn.
+     * Seit 2.4.0 einer, und der nur sieben Tage -- die Regel steht in
+     * Support\Sicherungen, an EINER Stelle fuer beide Arten von Sicherung.
+     * Vorher waren es fuenf, weggeraeumt nur beim naechsten Update desselben
+     * Moduls; ein Modul ohne neues Update behielt sie fuer immer.
      *
-     * Aufgeraeumt wurde bisher gar nicht. Auf unserer eigenen Anlage lagen am
+     * Davor wurde gar nicht aufgeraeumt. Auf unserer eigenen Anlage lagen am
      * 22.09.2026 siebenundvierzig Sicherungen aus sechs Wochen -- 66 MB, die
      * niemand je wieder angesehen haette.
      */
-    const SICHERUNGEN_BEHALTEN = 5;
+    const SICHERUNGEN_BEHALTEN = Sicherungen::JE_MODUL;
 
     /** @var StoreClient */
     protected $client;
@@ -325,12 +326,11 @@ class PackageInstaller
     }
 
     /**
-     * Alte beiseitegelegte Staende wegraeumen -- die juengsten behalten.
+     * Alte beiseitegelegte Staende wegraeumen -- nach der Regel in Sicherungen.
      *
-     * Der Name traegt den Zeitstempel (.Modul.vorher-JJJJMMTT-HHMMSS), und
-     * der ist so gebaut, dass alphabetisch sortieren nach Alter sortiert.
-     * Deshalb genuegt sort(); ein filemtime je Verzeichnis waere langsamer
-     * und bei einem kopierten Stand sogar falsch.
+     * Nicht nur die dieses Moduls: wenn schon aufgeraeumt wird, dann alles,
+     * was die Regel ohnehin wegnaehme. Sonst haengt es am naechtlichen Lauf,
+     * und der braucht einen eingerichteten Cron.
      *
      * Schlaegt das Wegraeumen fehl, passiert nichts weiter: das Update ist an
      * dieser Stelle schon durch, und eine liegengebliebene Sicherung ist
@@ -338,14 +338,7 @@ class PackageInstaller
      */
     protected function raeumeAlteSicherungen($ziel)
     {
-        $staende = (array) @glob(dirname($ziel).'/.'.basename($ziel).'.vorher-*', GLOB_ONLYDIR);
-        sort($staende);
-
-        $zuviel = count($staende) - self::SICHERUNGEN_BEHALTEN;
-
-        for ($i = 0; $i < $zuviel; $i++) {
-            $this->loeschen($staende[$i]);
-        }
+        Sicherungen::aufraeumen(dirname($ziel));
     }
 
     protected function zurueck($sicherung, $ziel)

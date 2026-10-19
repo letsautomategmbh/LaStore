@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "No hay respuesta guardada para :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "La respuesta guardada :file no es un JSON válido.",
     "Unbekannter Fehler": "Error desconocido",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "La tienda ha enviado una respuesta ilegible."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "La tienda ha enviado una respuesta ilegible.",
+    "Sicherungen alter Fassungen": "Copias de versiones anteriores",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "Con cada actualización, LaStore aparta la versión anterior para que haya un camino de vuelta. Se conserva una por módulo y se elimina automáticamente a los 7 días.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "¿Eliminar esta copia? Volver a la versión anterior solo será posible a través de la tienda.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "¿Eliminar todas las copias? Volver a la versión anterior solo será posible a través de la tienda.",
+    "Löschen": "Eliminar",
+    "Alle löschen": "Eliminar todas",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": "No se pudieron eliminar :n de :m copias. ¿Le faltan permisos al servidor web?",
+    "Alle Sicherungen sind gelöscht.": "Se han eliminado todas las copias.",
+    "Die Sicherung ist gelöscht.": "La copia se ha eliminado.",
+    "Diese Sicherung liess sich nicht löschen.": "No se pudo eliminar esta copia."
 }

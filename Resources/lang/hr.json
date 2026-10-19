@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "Nema spremljenog odgovora za :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "Spremljeni odgovor :file nije valjani JSON.",
     "Unbekannter Fehler": "Nepoznata pogreška",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "Trgovina je poslala nečitljiv odgovor."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "Trgovina je poslala nečitljiv odgovor.",
+    "Sicherungen alter Fassungen": "Sigurnosne kopije prethodnih verzija",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "Pri svakom ažuriranju LaStore odlaže prethodnu verziju kako bi postojao put natrag. Za svaki modul čuva se jedna, a nakon 7 dana automatski se briše.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Izbrisati ovu sigurnosnu kopiju? Povratak na prethodnu verziju tada je moguć samo putem trgovine.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Izbrisati sve sigurnosne kopije? Povratak na prethodnu verziju tada je moguć samo putem trgovine.",
+    "Löschen": "Izbriši",
+    "Alle löschen": "Izbriši sve",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n od :m sigurnosnih kopija nije moguće izbrisati. Nedostaju li web-poslužitelju prava?",
+    "Alle Sicherungen sind gelöscht.": "Sve sigurnosne kopije su izbrisane.",
+    "Die Sicherung ist gelöscht.": "Sigurnosna kopija je izbrisana.",
+    "Diese Sicherung liess sich nicht löschen.": "Ovu sigurnosnu kopiju nije moguće izbrisati."
 }

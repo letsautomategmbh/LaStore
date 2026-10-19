@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "Aucune réponse enregistrée pour :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "La réponse enregistrée :file n'est pas un JSON valide.",
     "Unbekannter Fehler": "Erreur inconnue",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "La boutique a envoyé une réponse illisible."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "La boutique a envoyé une réponse illisible.",
+    "Sicherungen alter Fassungen": "Sauvegardes des versions précédentes",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "À chaque mise à jour, LaStore met de côté la version précédente afin de pouvoir revenir en arrière. Une seule est conservée par module, et elle est supprimée automatiquement après 7 jours.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Supprimer cette sauvegarde ? Le retour à la version précédente ne sera alors possible que via la boutique.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Supprimer toutes les sauvegardes ? Le retour à la version précédente ne sera alors possible que via la boutique.",
+    "Löschen": "Supprimer",
+    "Alle löschen": "Tout supprimer",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n sur :m sauvegardes n'ont pas pu être supprimées. Le serveur web manque-t-il de droits ?",
+    "Alle Sicherungen sind gelöscht.": "Toutes les sauvegardes ont été supprimées.",
+    "Die Sicherung ist gelöscht.": "La sauvegarde a été supprimée.",
+    "Diese Sicherung liess sich nicht löschen.": "Cette sauvegarde n'a pas pu être supprimée."
 }

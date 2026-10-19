@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "אין תגובה שמורה עבור :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "התגובה השמורה :file אינה JSON תקין.",
     "Unbekannter Fehler": "שגיאה לא ידועה",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "החנות שלחה תגובה בלתי קריאה."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "החנות שלחה תגובה בלתי קריאה.",
+    "Sicherungen alter Fassungen": "גיבויים של גרסאות קודמות",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "בכל עדכון LaStore שומר בצד את הגרסה הקודמת, כדי שתהיה דרך חזרה. נשמר אחד לכל מודול, והוא נמחק אוטומטית אחרי 7 ימים.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "למחוק גיבוי זה? חזרה לגרסה הקודמת תהיה אפשרית לאחר מכן רק דרך החנות.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "למחוק את כל הגיבויים? חזרה לגרסה הקודמת תהיה אפשרית לאחר מכן רק דרך החנות.",
+    "Löschen": "מחיקה",
+    "Alle löschen": "מחק הכול",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": "לא ניתן היה למחוק :n מתוך :m גיבויים. האם לשרת האינטרנט חסרות הרשאות?",
+    "Alle Sicherungen sind gelöscht.": "כל הגיבויים נמחקו.",
+    "Die Sicherung ist gelöscht.": "הגיבוי נמחק.",
+    "Diese Sicherung liess sich nicht löschen.": "לא ניתן היה למחוק גיבוי זה."
 }

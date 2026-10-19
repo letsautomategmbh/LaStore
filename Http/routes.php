@@ -30,6 +30,7 @@ Route::group([
     // Ein Druck: Schlüssel prüfen, installieren, registrieren.
     Route::post('installieren', 'StoreController@install')->name('install');
     Route::post('autopilot', 'StoreController@autopilot')->name('autopilot');
+    Route::post('sicherungen/loeschen', 'StoreController@sicherungen')->name('sicherungen');
     // LaStore selbst. Eigener Weg, weil er das Modul austauscht, in dem er
     // laeuft -- nach dem Tausch wird nichts mehr nachgeladen.
     Route::post('selbst-aktualisieren', 'StoreController@selfUpdate')->name('self_update');

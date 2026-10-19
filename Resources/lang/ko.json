@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": ":file에 대한 저장된 응답이 없습니다.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "저장된 응답 :file은(는) 유효한 JSON이 아닙니다.",
     "Unbekannter Fehler": "알 수 없는 오류",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "스토어가 읽을 수 없는 응답을 보냈습니다."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "스토어가 읽을 수 없는 응답을 보냈습니다.",
+    "Sicherungen alter Fassungen": "이전 버전 백업",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "LaStore는 업데이트할 때마다 이전 버전을 따로 보관하여 되돌릴 수 있게 합니다. 모듈당 하나만 보관되며 7일 후 자동으로 삭제됩니다.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "이 백업을 삭제하시겠습니까? 이후 이전 버전으로 되돌리려면 스토어를 통해서만 가능합니다.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "모든 백업을 삭제하시겠습니까? 이후 이전 버전으로 되돌리려면 스토어를 통해서만 가능합니다.",
+    "Löschen": "삭제",
+    "Alle löschen": "모두 삭제",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":m개 중 :n개의 백업을 삭제하지 못했습니다. 웹 서버에 권한이 없습니까?",
+    "Alle Sicherungen sind gelöscht.": "모든 백업이 삭제되었습니다.",
+    "Die Sicherung ist gelöscht.": "백업이 삭제되었습니다.",
+    "Diese Sicherung liess sich nicht löschen.": "이 백업을 삭제하지 못했습니다."
 }

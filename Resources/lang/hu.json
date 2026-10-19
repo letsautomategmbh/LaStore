@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "Nincs mentett válasz ehhez: :file.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "A(z) :file mentett válasz nem érvényes JSON.",
     "Unbekannter Fehler": "Ismeretlen hiba",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "Az áruház olvashatatlan választ küldött."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "Az áruház olvashatatlan választ küldött.",
+    "Sicherungen alter Fassungen": "Korábbi verziók biztonsági mentései",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "A LaStore minden frissítéskor félreteszi az előző verziót, hogy legyen visszaút. Modulonként egy marad meg, és 7 nap után automatikusan törlődik.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Törli ezt a biztonsági mentést? Az előző verzióra ezután csak a boltban keresztül lehet visszatérni.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "Törli az összes biztonsági mentést? Az előző verzióra ezután csak a boltban keresztül lehet visszatérni.",
+    "Löschen": "Törlés",
+    "Alle löschen": "Összes törlése",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n / :m biztonsági mentést nem sikerült törölni. Hiányoznak a webszerver jogosultságai?",
+    "Alle Sicherungen sind gelöscht.": "Minden biztonsági mentés törölve.",
+    "Die Sicherung ist gelöscht.": "A biztonsági mentés törölve.",
+    "Diese Sicherung liess sich nicht löschen.": "Ezt a biztonsági mentést nem sikerült törölni."
 }

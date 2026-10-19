@@ -88,5 +88,15 @@
     "Keine abgelegte Antwort für :file.": "پاسخ ذخیره‌شده‌ای برای :file وجود ندارد.",
     "Die abgelegte Antwort :file ist kein gültiges JSON.": "پاسخ ذخیره‌شدهٔ :file یک JSON معتبر نیست.",
     "Unbekannter Fehler": "خطای ناشناخته",
-    "Der Shop hat eine unlesbare Antwort geschickt.": "فروشگاه پاسخی ناخوانا فرستاد."
+    "Der Shop hat eine unlesbare Antwort geschickt.": "فروشگاه پاسخی ناخوانا فرستاد.",
+    "Sicherungen alter Fassungen": "پشتیبان‌های نسخه‌های قبلی",
+    "Bei jedem Update legt LaStore die vorige Fassung beiseite, damit es einen Rückweg gibt. Je Modul bleibt eine, und sie wird nach 7 Tagen von selbst gelöscht.": "LaStore در هر به‌روزرسانی نسخهٔ قبلی را کنار می‌گذارد تا راه بازگشتی باشد. برای هر ماژول یکی نگه داشته می‌شود و پس از ۷ روز خودکار حذف می‌شود.",
+    "Diese Sicherung löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "این پشتیبان حذف شود؟ بازگشت به نسخهٔ قبلی پس از آن فقط از طریق فروشگاه ممکن است.",
+    "Alle Sicherungen löschen? Ein Zurück auf die vorige Fassung geht danach nur noch über den Laden.": "همهٔ پشتیبان‌ها حذف شوند؟ بازگشت به نسخهٔ قبلی پس از آن فقط از طریق فروشگاه ممکن است.",
+    "Löschen": "حذف",
+    "Alle löschen": "حذف همه",
+    ":n von :m Sicherungen liessen sich nicht löschen. Fehlen dem Webserver die Rechte daran?": ":n از :m پشتیبان حذف نشد. آیا سرور وب دسترسی ندارد؟",
+    "Alle Sicherungen sind gelöscht.": "همهٔ پشتیبان‌ها حذف شدند.",
+    "Die Sicherung ist gelöscht.": "پشتیبان حذف شد.",
+    "Diese Sicherung liess sich nicht löschen.": "این پشتیبان حذف نشد."
 }
