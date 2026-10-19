@@ -138,6 +138,16 @@ class Umzug
             return self::ergebnis(self::KEINER);
         }
 
+        /*
+         * Speicher. Jedes Anmelden beim Kern (freescout:module-install) legt in
+         * diesem einen Prozess etwas drauf, und der Prozess kennt alte UND neue
+         * Klassen. Mit 17 Modulen ging der Dev-Umgebung am 19.10.2026 bei
+         * 128 MB nach dem siebten der Speicher aus -- mitten im Umzug, die
+         * Hälfte gewandert. Darum vorher anheben, wie FreeScout es für seine
+         * eigenen Updates tut. Nur nach oben, nie nach unten.
+         */
+        self::speicherAnheben(512 * 1024 * 1024);
+
         // ── 1. Warteschlange ────────────────────────────────────────────
         $belegt = self::wartendeAuftraege($liste);
 
@@ -200,6 +210,18 @@ class Umzug
             return self::ergebnis(self::FEHLER, array(), $e->getMessage());
         }
 
+        // Die ALTEN Klassennamen im laufenden Prozess auf die neuen lenken.
+        //
+        // Dieser Prozess ist mit den alten Modulen gestartet. Sie haben ihre
+        // Befehle, Haken und Dienstleister unter den alten Namen angemeldet
+        // (Modules\FileBrowser\Console\CleanupCommand). Nach dem Tausch
+        // gibt es diese Dateien nicht mehr, und das Anmelden beim Kern
+        // (Artisan::call) scheiterte in der Dev-Umgebung am 19.10.2026 für
+        // ALLE Module an genau so einem Befehl. Die Übergangslader der neuen
+        // Module helfen hier nicht: deren Dienstleister lädt dieser Prozess
+        // nie. Also hier einer für alle, nur für die Dauer dieses Prozesses.
+        self::uebergangsladerFuer($liste, $getauscht);
+
         // SOFORT nach dem Tausch, nicht erst nach der Datenbank: der Kern
         // merkt sich seine Modulliste samt Pfaden im Anwendungscache. Zeigt
         // sie auf einen Ordner, den es nicht mehr gibt, antwortet JEDE Seite
@@ -235,7 +257,7 @@ class Umzug
         $offen = array();
 
         foreach ($liste as $eintrag) {
-            $melden(sprintf('%s: beim Kern anmelden', $eintrag['neu']));
+            $melden(sprintf('%s: beim Kern anmelden (%d MB belegt)', $eintrag['neu'], memory_get_usage(true) / 1048576));
             $anmeldung = ModulAnmeldung::anmelden($eintrag['neu']);
 
             if (!$anmeldung['ok']) {
@@ -375,6 +397,63 @@ class Umzug
         }
 
         return array_values($belegt);
+    }
+
+    /**
+     * Alte Namensräume (Modules\Bexio\…) auf die neuen (Modules\LaBexio\…).
+     *
+     * @param array $liste     anstehend()
+     * @param array $getauscht alt => Rückgabe von PackageInstaller::umziehen()
+     */
+    protected static function uebergangsladerFuer(array $liste, array $getauscht)
+    {
+        $karte = array();
+
+        foreach ($liste as $eintrag) {
+            if (isset($getauscht[$eintrag['alt']]['name']) && $eintrag['name'] !== $getauscht[$eintrag['alt']]['name']) {
+                $karte['Modules\\'.$eintrag['name'].'\\'] = 'Modules\\'.$getauscht[$eintrag['alt']]['name'].'\\';
+            }
+        }
+
+        if (!$karte) {
+            return;
+        }
+
+        spl_autoload_register(function ($klasse) use ($karte) {
+            foreach ($karte as $alt => $neu) {
+                if (strncmp($klasse, $alt, strlen($alt)) === 0) {
+                    $ziel = $neu.substr($klasse, strlen($alt));
+
+                    if (class_exists($ziel) || interface_exists($ziel) || trait_exists($ziel)) {
+                        class_alias($ziel, $klasse);
+                    }
+
+                    return;
+                }
+            }
+        });
+    }
+
+    /** Die Speichergrenze dieses Prozesses auf mindestens $bytes heben. */
+    protected static function speicherAnheben($bytes)
+    {
+        $jetzt = trim((string) ini_get('memory_limit'));
+
+        if ($jetzt === '-1') {
+            return;
+        }
+
+        $zahl = (int) $jetzt;
+        $einheit = strtolower(substr($jetzt, -1));
+        $faktor = array('g' => 1073741824, 'm' => 1048576, 'k' => 1024);
+
+        if (isset($faktor[$einheit])) {
+            $zahl *= $faktor[$einheit];
+        }
+
+        if ($zahl > 0 && $zahl < $bytes) {
+            @ini_set('memory_limit', (string) $bytes);
+        }
     }
 
     /** Modulliste des Kerns und seine Zeilen aus `modules` neu lesen lassen. */
